@@ -10,6 +10,11 @@
 .. .. image:: https://img.shields.io/pypi/v/ERPBlok.svg
 ..    :target: https://pypi.python.org/pypi/ERPBlok/
 ..    :alt: Version status
+
+.. image:: https://readthedocs.org/projects/ERPBlok/badge/?version=latest
+    :alt: Documentation Status
+    :scale: 100%
+    :target: https://erpblok.readthedocs.io/en/latest/?badge=latest
    
 ERPBlok
 =======
