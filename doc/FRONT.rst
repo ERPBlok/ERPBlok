@@ -8,15 +8,13 @@ Information about the ERPBlok project.
 Project Homepage
 ----------------
 
-ERPBlok is hosted on `Bitbucket <http://bitbucket.org>`_ - the main project
-page is at https://bitbucket.org/jssuzanne/erpblok. Source code is tracked here
-using `Mercurial <http://mercurial.selenic.com>`_.
+ERPBlok is hosted on `github <http://github.com>`_ - the main project
+page is at https://github.com/ERPBlok/ERPBlok. Source code is tracked here
+using `GIT <https://git-scm.com>`_.
 
 .. Releases and project status are available on Pypi at 
 .. http://pypi.python.org/pypi/anyblok.
 
-The most recent published version of this documentation should be at
-http://docs.erpblok.fr/erpblok/default.
 
 Project Status
 --------------
@@ -59,8 +57,6 @@ Run the blok tests at the installation::
 
     anyblok_updatedb -c config.file.cfg --install_bloks myblok --test-blok-at-install
 
-AnyBlok are tested by the `Anybox <http://anybox.fr>`_ `builbot <http://buildbot.anyblok.org>`_
-
 Dependencies
 ------------
 
@@ -92,4 +88,4 @@ Bugs
 ----
 
 Bugs and feature enhancements to AnyBlok should be reported on the `Issue 
-tracker <https://bitbucket.org/jssuzanne/erpblok/issues?status=new&status=open>`_.
+tracker <https://github.com/ERPBlok/ERPBlok/issues>`_.
