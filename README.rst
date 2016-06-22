@@ -7,9 +7,9 @@
     :target: https://coveralls.io/github/ERPBlok/ERPBlok?branch=master
     :alt: Coverage
 
-.. .. image:: https://img.shields.io/pypi/v/ERPBlok.svg
-..    :target: https://pypi.python.org/pypi/ERPBlok/
-..    :alt: Version status
+.. image:: https://img.shields.io/pypi/v/ERPBlok.svg
+   :target: https://pypi.python.org/pypi/ERPBlok/
+   :alt: Version status
 
 .. image:: https://readthedocs.org/projects/erpblok/badge/?version=latest
     :alt: Documentation Status
