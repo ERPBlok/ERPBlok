@@ -1,0 +1,27 @@
+marshmallow==3.2.1
+anyblok==1.0.0
+anyblok_pyramid==1.2.0
+anyblok_pyramid_beaker==1.1.1
+anyblok_pyramid_rest_api==0.7.0
+anyblok_address==1.2.1
+anyblok_mixins==1.0.2
+anyblok_io==1.1.1
+anyblok_postgres==0.2.0
+anyblok_delivery==1.4.0
+anyblok_attachment==2.1.1
+anyblok_attachment_jinja==1.0.0
+python-barcode==0.13.1
+
+colour 
+jinja2
+passlib 
+furl 
+phonenumbers 
+pycountry
+cryptography
+pygments==2.0.2
+
+git+https://github.com/AnyBlok/anyblok_furetui.git#egg=anyblok_furetui
+
+
+-e .
