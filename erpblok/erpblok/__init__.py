@@ -1,34 +1,35 @@
-"""Blok declaration example
-"""
 from anyblok.blok import Blok
+from anyblok_io.blok import BlokImporter
 
 
-class Erpblok(Blok):
+def import_declaration_module(reload=None):
+    from . import models
+
+    models.import_declaration_module(reload)
+
+
+class Erpblok(Blok, BlokImporter):
     """Erpblok's Blok class definition
     """
     version = "0.1.0"
-    author = "Your name"
+    author = "Jean-Sébastien Suzanne"
     required = [
         'anyblok-core',
         'furetui',
+        "furetui-auth",
     ]
 
     @classmethod
     def import_declaration_module(cls):
-        """Python module to import in the given order at start-up
-        """
-        from . import model  # noqa
+        import_declaration_module()
 
     @classmethod
     def reload_declaration_module(cls, reload):
-        """Python module to import while reloading server (ie when
-        adding Blok at runtime
-        """
-        from . import model  # noqa
-        reload(model)
+        import_declaration_module(reload=reload)
 
     def update(self, latest):
         """Update blok"""
-        # if we install this blok in the database we add a new record
-        if not latest:
-            self.registry.Example.insert(name="An example")
+
+    @classmethod
+    def pyramid_load_config(cls, config):
+        config.scan(cls.__module__ + ".views")
