@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+  <record external_id="resource_project" model="Model.FuretUI.Resource.Set">
+    <field name="multi_type">thumbnail</field>
+    <field name="thumbnail" external_id="resource_erpblok_project_thumbnail" model="Model.FuretUI.Resource.Thumbnail">
+      <field name="model">Model.ERPBlok.Project</field>
+      <field name="title">menu.ERPBlok.Project</field>
+      <field name="template">ERPBlokProjectThumbnail</field>
+      <field name="filters">
+        <record external_id="resource_filter_erpblok_project_code">
+          <field name="key">code</field>
+          <field name="label">resource.erpblok.project.code</field>
+        </record>
+        <record external_id="resource_filter_erpblok_project_label">
+          <field name="key">label</field>
+          <field name="label">resource.erpblok.project.label</field>
+        </record>
+      </field>
+    </field>
+    <field name="form" external_id="resource_erpblok_project_form" model="Model.FuretUI.Resource.Form">
+      <field name="model">Model.ERPBlok.Project</field>
+      <field name="template">ERPBlokProjectForm</field>
+    </field>
+  </record>
+  <record external_id="resource_project_task" model="Model.FuretUI.Resource.Set">
+    <field name="multi_type">kanban</field>
+    <field name="kanban" external_id="resource_erpblok_project_task_kanban" model="Model.FuretUI.Resource.Kanban">
+      <field name="model">Model.ERPBlok.Project.Task</field>
+      <field name="title">menu.ERPBlok.Project.Task</field>
+      <field name="template">ERPBlokProjectTaskKanban</field>
+      <field name="field_identity">state</field>
+      <field name="field_order">order</field>
+      <field name="filters">
+        <record external_id="resource_filter_erpblok_project_task_code">
+          <field name="key">code</field>
+          <field name="label">resource.erpblok.project.task.code</field>
+        </record>
+        <record external_id="resource_filter_erpblok_project_task_label">
+          <field name="key">label</field>
+          <field name="label">resource.erpblok.project.task.label</field>
+        </record>
+      </field>
+    </field>
+    <field name="form" external_id="resource_erpblok_project_task_form" model="Model.FuretUI.Resource.Form">
+      <field name="model">Model.ERPBlok.Project.Task</field>
+      <field name="template">ERPBlokProjectTaskForm</field>
+    </field>
+  </record>
+</records>

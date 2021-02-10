@@ -41,7 +41,9 @@ setup(
     packages=find_packages(),
     entry_points={
         'bloks': [
-            'erpblok=erpblok.erpblok:Erpblok'
+            'erpblok=erpblok.erpblok:Erpblok',
+            'erpblok-blok-manager=erpblok.blokmanager:BlokManager',
+            'erpblok-project=erpblok.project:Project',
          ]
     },
     include_package_data=True,

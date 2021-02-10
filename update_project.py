@@ -15,7 +15,8 @@ from sqlalchemy_utils.functions import database_exists, create_database
 logger = getLogger(__name__)
 
 Configuration.add_application_properties(
-    'update-project', ['logging'], prog='AnyBlok update project, version')
+    'update-project', ['logging', 'create_db'],
+    prog='AnyBlok update project, version')
 
 
 def update_project():
@@ -37,10 +38,16 @@ def update_project():
         create_database(url, template=db_template_name)
         to_install.append('erpblok')
         version = None
+        registry = RegistryManager.get(db_name, **options)
+        with_demo = Configuration.get('with_demo', False)
+        registry.System.Parameter.set("with-demo", with_demo)
+        if with_demo:
+            to_install.append('erpblok-blok-manager')
+
     else:
         options.update(dict(loadwithoutmigration=True))
+        registry = RegistryManager.get(db_name, **options)
 
-    registry = RegistryManager.get(db_name, **options)
     registry.update_blok_list()  # case, new blok added
     version = registry.System.Blok.query().filter_by(
         name='erpblok').one().installed_version
@@ -52,6 +59,12 @@ def update_project():
 
     registry.upgrade(install=to_install, update=to_update,
                      uninstall=to_uninstall)
+
+    if version is None:
+        admin = registry.Pyramid.User.insert(login='admin')
+        registry.Pyramid.CredentialStore.insert(
+            login='admin', password='admin')
+        admin.roles.append(registry.Pyramid.Role.query().get('admin'))
 
     registry.commit()
     registry.close()

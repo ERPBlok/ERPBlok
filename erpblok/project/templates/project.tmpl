@@ -1,0 +1,35 @@
+<templates>
+  <template id="ERPBlokProjectThumbnail">
+    <header>
+      <p class="card-header-title">
+        {{ data.label }} 
+      </p>
+    </header>
+    <field name="label" hidden/>
+    <p><field name="code" widget="BarCode" /></p>
+    <p><field name="description" widget="RichText" /></p>
+  </template>
+  <template id="ERPBlokProjectForm">
+    <header>
+      <nav class="level">
+        <div class="level-left">
+          <div class="level-item content">
+            <field name="code" widget="BarCode" label="" readonly/>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="columns">
+      <div class="column"><field name="label" /></div>
+      <div class="column"><field name="color" /></div>
+    </div>
+    <tabs>
+      <tab label="Description">
+        <field name="description" widget="RichText"/>
+      </tab>
+      <tab label="Tasks">
+        <field name="tasks" resource-external_id="resource_project_task"/>
+      </tab>
+    </tabs>
+  </template>
+</templates>

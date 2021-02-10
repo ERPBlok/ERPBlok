@@ -1,0 +1,106 @@
+<templates>
+  <template id="BlokList">
+    <field name="name" sortable />
+    <field name="state" widget="StatusBar" done-states="installed" dangerous-states="undefined"/>
+  </template>
+  <template id="BlokThumbnail">
+    <header>
+      <p class="card-header-title">
+        {{ data.name }} 
+      </p>
+      <p class="card-header-icon">
+        <field 
+          name="state" 
+          widget="StatusBar" 
+          done-states="installed"
+          dangerous-states="toinstall,touninstall,toupdate,undefined"
+        />
+      </p>
+    </header>
+    <field name="name" hidden/>
+    <field name="short_description" hidden/>
+    <p class="content">
+      {{ data.short_description }}
+    </p>
+    <div class="columns">
+      <div class="column"><field name="category" /></div>
+      <div class="column"><field name="color" /></div>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column"><field name="installed_version" /></div>
+      <div class="column"><field name="version" /></div>
+    </div>
+    <footer>
+      <div class="card-footer-item" hidden="fields.state != 'uninstalled'">
+        <button label="Install" call="furetui_install"/>
+      </div>
+      <div class="card-footer-item" hidden="fields.state != 'installed'">
+        <button label="Uninstall" call="furetui_uninstall" />
+      </div>
+      <div class="card-footer-item" hidden="fields.state != 'installed'">
+        <button label="Update" call="furetui_update" />
+      </div>
+    </footer>
+  </template>
+  <template id="BlokKanban">
+    <header>
+      <p class="card-header-title">
+        {{ data.name }} ( {{ data.order }})
+      </p>
+      <p class="card-header-icon">
+        <field 
+          name="state" 
+          widget="StatusBar" 
+          done-states="installed"
+          dangerous-states="toinstall,touninstall,toupdate,undefined"
+        />
+      </p>
+    </header>
+    <field name="name" hidden/>
+    <field name="order" hidden/>
+    <field name="short_description" hidden/>
+    <p class="content">
+      {{ data.short_description }}
+    </p>
+  </template>
+  <template id="BlokForm">
+    <header>
+      <nav class="level">
+        <div class="level-left">
+          <div class="level-item content">
+            <h1 class="is-large">{{ data.name }}</span></h1>
+          </div>
+        </div>
+        <div class="level-right">
+          <div class="level-item" hidden="fields.state != 'uninstalled'">
+            <button label="Install" call="furetui_install" class="is-primary"/>
+          </div>
+          <div class="level-item" hidden="fields.state != 'installed'">
+            <button label="Uninstall" call="furetui_uninstall" class="is-danger"/>
+          </div>
+          <div class="level-item" hidden="fields.state != 'installed'">
+            <button label="Update" call="furetui_update" class="is-success"/>
+          </div>
+          <div class="level-item">
+            <field name="state" widget="StatusBar" done-states="installed" dangerous-states="undefined"/>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <field name="name" hidden/>
+    <field name="state" hidden/>
+    <div class="columns">
+      <div class="column"><field name="name" /></div>
+      <div class="column"><field name="state" /></div>
+    </div>
+    <div class="columns">
+      <div class="column"><field name="version" /></div>
+      <div class="column"><field name="installed_version" /></div>
+    </div>
+    <div class="columns">
+      <div class="column"><field name="color" /></div>
+      <div class="column"></div>
+    </div>
+  </template>
+</templates>
