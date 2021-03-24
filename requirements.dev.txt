@@ -1,4 +1,5 @@
 marshmallow==3.2.1
+sqlalchemy==1.3.19
 anyblok==1.0.0
 anyblok_pyramid==1.2.0
 anyblok_pyramid_beaker==1.1.1

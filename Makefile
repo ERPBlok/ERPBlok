@@ -31,7 +31,7 @@ setup-tests: ## install python project dependencies for tests
 setup-dev: ## install python project dependencies for development
 	pip install --upgrade pip wheel
 	pip install --upgrade -r requirements.dev.txt
-	python update_project.py -c app.dev.cfg
+	python update_project.py -c app.dev.cfg --with-demo
 	nodeenv -p
 	npm i -g npm
 	npm install
@@ -78,7 +78,7 @@ lint: ## check style with flake8
 
 test: ## run tests
 	ANYBLOK_CONFIG_FILE=app.test.cfg py.test -v -s erpblok
-	npm run test:unit
+	# npm run test:unit
 
 documentation: ## generate documentation
 	anyblok_doc -c app.test.cfg --doc-format RST --doc-output doc/source/apidoc.rst

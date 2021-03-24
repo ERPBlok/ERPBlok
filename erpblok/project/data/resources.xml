@@ -41,6 +41,11 @@
         </record>
       </field>
     </field>
+    <field name="thumbnail" external_id="resource_erpblok_project_task_thumbnail" model="Model.FuretUI.Resource.Thumbnail">
+      <field name="model">Model.ERPBlok.Project.Task</field>
+      <field name="title">menu.ERPBlok.Project.Task</field>
+      <field name="template">ERPBlokProjectTaskKanban</field>
+    </field>
     <field name="form" external_id="resource_erpblok_project_task_form" model="Model.FuretUI.Resource.Form">
       <field name="model">Model.ERPBlok.Project.Task</field>
       <field name="template">ERPBlokProjectTaskForm</field>
