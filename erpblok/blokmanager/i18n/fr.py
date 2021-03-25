@@ -1,0 +1,8 @@
+fr = {
+    'space': {
+    },
+    'menu': {
+    },
+    'resource': {
+    },
+}

@@ -1,0 +1,25 @@
+<templates>
+  <template id="ERPBlokAccountList">
+    <field name="code" />
+    <field name="label" />
+    <field name="parent" />
+    <field name="children" />
+  </template>
+  <template id="ERPBlokAccountForm">
+    <header>
+      <nav class="level">
+        <div class="level-left">
+          <div class="level-item content">
+            {{ fields.code }}
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="columns">
+      <div class="column"><field name="code" /></div>
+      <div class="column"><field name="label" /></div>
+      <div class="column"><field name="parent" /></div>
+    </div>
+    <field name="description" widget="RichText"/>
+  </template>
+</templates>

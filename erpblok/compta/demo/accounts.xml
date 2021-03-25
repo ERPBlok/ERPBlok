@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+  <record external_id="account_1">
+    <field name="code">1</field>
+    <field name="label">Class 1</field>
+  </record>
+  <record external_id="account_2">
+    <field name="code">2</field>
+    <field name="label">Class 2</field>
+  </record>
+  <record external_id="account_3">
+    <field name="code">3</field>
+    <field name="label">Class 3</field>
+  </record>
+  <record external_id="account_4">
+    <field name="code">4</field>
+    <field name="label">Class 4</field>
+    <field name="children">
+      <record external_id="account_40">
+        <field name="code">40</field>
+        <field name="label">40</field>
+        <field name="children">
+          <record external_id="account_401">
+            <field name="code">401</field>
+            <field name="label">401</field>
+            <field name="children">
+              <record external_id="account_401001">
+                <field name="code">401001</field>
+                <field name="label">HashBang</field>
+              </record>
+              <record external_id="account_401002">
+                <field name="code">401002</field>
+                <field name="label">JS Suzanne</field>
+              </record>
+              <record external_id="account_401003">
+                <field name="code">401003</field>
+                <field name="label">Pierre Verkest</field>
+              </record>
+            </field>
+          </record>
+        </field>
+      </record>
+    </field>
+  </record>
+  <record external_id="account_5">
+    <field name="code">5</field>
+    <field name="label">Class 5</field>
+    <field name="children">
+      <record external_id="account_50">
+        <field name="code">50</field>
+        <field name="label">50</field>
+        <field name="children">
+          <record external_id="account_507">
+            <field name="code">507</field>
+            <field name="label">507</field>
+          </record>
+        </field>
+      </record>
+    </field>
+  </record>
+  <record external_id="account_6">
+    <field name="code">6</field>
+    <field name="label">Class 6</field>
+  </record>
+</records>

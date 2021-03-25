@@ -1,67 +1,72 @@
-
-.. image:: https://travis-ci.org/ERPBlok/ERPBlok.svg?branch=master
-    :target: https://travis-ci.org/ERPBlok/ERPBlok
-    :alt: Build status
-
-.. image:: https://coveralls.io/repos/github/ERPBlok/ERPBlok/badge.svg?branch=master
-    :target: https://coveralls.io/github/ERPBlok/ERPBlok?branch=master
-    :alt: Coverage
-
-.. image:: https://img.shields.io/pypi/v/ERPBlok.svg
-   :target: https://pypi.python.org/pypi/ERPBlok/
-   :alt: Version status
-
-.. image:: https://readthedocs.org/projects/erpblok/badge/?version=latest
-    :alt: Documentation Status
-    :scale: 100%
-    :target: https://erpblok.readthedocs.io/en/latest/?badge=latest
-   
-ERPBlok
+=======
+erpblok
 =======
 
-ERPBlok provide a way to manage business applications on top of `Anyblok 
-<http://doc.anyblok.org>`_ adding a Graphic User Interface based on
-`React <https://facebook.github.io/react/>`_ and `Foundation 
-<http://foundation.zurb.com/>`_
+A short description of the Anyblok based project
 
-* `Documentation <http://docs.anybox.fr/erpblok/default/index.html>`_
-* `Continious integration <http://buildbot.anyblok.org/waterfall>`_
 
-Preview
+* Free software: Mozilla Public License Version 2.0
+* Documentation: https://erpblok.readthedocs.io.
+
+Setup
+-----
+
+* Clone the repository
+
+* Installer le projet et le blok de compta::
+
+     python3 -m venv venv
+     source venv/bin/activate
+     make setup-dev
+     anyblok_updatedb -c app.dev.cfg --install-bloks erpblok-compta
+
+* Lancer le server python en auto reload::
+   
+     source venv/bin/activate
+     make run-dev
+
+* Lancer le client FuretUI (Le serveur doit être lancer)::
+   
+     source venv/bin/activate
+     make run-dev-npm
+
+# Lancer les tests U::
+
+     source venv/bin/activate
+     make setup-tests
+     make test
+
+# Lanver un interpreter python::
+
+     source venv/bin/activate
+     anyblok_interpreter -c app.dev.cfg
+
+
+`doc AnyBlok <https://doc.anyblok.org/en/latest/MEMENTO.html>`_
+`doc SQLAlchemy <https://docs.sqlalchemy.org/en/14/orm/query.html?highlight=query#sqlalchemy.orm.Query>`_
+
+
+
+
+Features
+--------
+
+* TODO
+
+Author
+------
+
+Your name 
+Your address email (eq. you@example.com)
+https://github.com/Your github username
+
+Credits
 -------
 
-Inline list view:
+.. _`Anyblok`: https://github.com/AnyBlok/AnyBlok
 
-|inline_list_view|
+This `Anyblok`_ package was created with `audreyr/cookiecutter`_ and the `AnyBlok/cookiecutter-anyblok-project`_ project template.
 
-Form view:
+.. _`AnyBlok/cookiecutter-anyblok-project`: https://github.com/Anyblok/cookiecutter-anyblok-project
+.. _`audreyr/cookiecutter`: https://github.com/audreyr/cookiecutter
 
-|form_view|
-
-
-License
--------
-
-AGPL v3 without clause (May change according the community requests)
-
-
-Project state
--------------
-
-Active development.
-
-Todo
-----
-
-* add search view
-* manage authorizations
-* improve code base stability
-* Dialog view
-* Adding more field widgets (Datetime, Color, Email, ...)
-* Adding more view types (Diagramme, Kanban, Custom, ...)
-* ...
-
-.. |inline_list_view| image:: doc/_static/list-view.png
-    :alt: Inline list view picture
-.. |form_view| image:: doc/_static/form-view.png
-    :alt: Form view picture

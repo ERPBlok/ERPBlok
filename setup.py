@@ -1,59 +1,67 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""Setup script for erpblok"""
+
 from setuptools import setup, find_packages
-version = '0.0.1'
+import os
 
+version = "0.1.0"
+here = os.path.abspath(os.path.dirname(__file__))
 
-requires = [
+with open(
+    os.path.join(here, 'README.rst'), 'r', encoding='utf-8'
+) as readme_file:
+    readme = readme_file.read()
+
+with open(
+    os.path.join(here, 'CHANGELOG.rst'), 'r', encoding='utf-8'
+) as changelog_file:
+    changelog = changelog_file.read()
+
+requirements = [
+    'sqlalchemy',
     'anyblok',
-    'anyblok_pyramid',
-    'anyblok_pyramid_beaker',
-    'pyramid_rpc',
-    'pyramid_mako',
-    'lxml',
-    'rst2html5',
-    'python-magic',
-    'gunicorn',
-    'passlib',
+    'anyblok-mixins',
+    'psycopg2-binary',
+    'anyblok_furetui',
 ]
 
-ERPBlok = [
-    'erpblok-core=erpblok.bloks.erpblok_core:ERPBlokCore',
-    'erpblok-web-client=erpblok.bloks.erpblok_web_client:ERPBlokWebClient',
-    'erpblok-demo=erpblok.bloks.erpblok_demo:ERPBlokDemo',
-    'erpblok-debug=erpblok.bloks.erpblok_debug:ERPBlokDebug',
-    'erpblok-blok-manager=erpblok.bloks.blok_manager:ERPBlokBlokManager',
-]
-
-anyblok_pyramid_includeme = [
-    'mako_and_static=erpblok.pyramid_config:add_mako_and_static',
-    'declare_json_adapter=erpblok.pyramid_config:declare_json_data_adapter',
-    'pyramid_rpc=erpblok.pyramid_config:pyramid_rpc',
-    'load_main_client=erpblok.client:load_client',
-]
-
-anyblok_init = [
-    'load_config=erpblok:load_config',
+test_requirements = [
+    # TODO: put package test requirements here
 ]
 
 setup(
-    name="ERPBlok",
+    name='erpblok',
     version=version,
-    author="Jean-Sébastien Suzanne",
-    author_email="jssuzanne@anybox.fr",
-    description="Open Source ERP base on AnyBlok",
-    license="GPL3",
-    long_description=open('README.rst').read(),
-    url="http://docs.erpblok.org/%s" % version,
+    description="A short description of the Anyblok based project",
+    long_description=readme + '\n\n' + changelog,
+    author="Your name",
+    author_email='Your address email (eq. you@example.com)',
+    url='https://github.com/Your github username/erpblok',
     packages=find_packages(),
-    zip_safe=False,
-    include_package_data=True,
-    install_requires=requires,
-    tests_require=requires + ['nose'],
-    classifiers=[
-    ],
     entry_points={
-        'bloks': ERPBlok,
-        'anyblok_pyramid.includeme': anyblok_pyramid_includeme,
-        'anyblok.init': anyblok_init,
+        'bloks': [
+            'erpblok=erpblok.erpblok:Erpblok',
+            'erpblok-blok-manager=erpblok.blokmanager:BlokManager',
+            'erpblok-project=erpblok.project:Project',
+            'erpblok-compta=erpblok.compta:Compta',
+         ]
     },
-    extras_require={},
+    include_package_data=True,
+    install_requires=requirements,
+    zip_safe=False,
+    keywords='erpblok',
+    classifiers=[
+        'Development Status :: 2 - Pre-Alpha',
+        'Intended Audience :: Developers',
+        'Natural Language :: English',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+    ],
+    test_suite='tests',
+    tests_require=test_requirements,
 )

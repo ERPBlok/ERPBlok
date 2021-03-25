@@ -1,0 +1,29 @@
+<templates>
+  <template id="ERPBlokProjectTaskKanban">
+    <header>
+      <p class="card-header-title">
+        {{ data.label }}
+      </p>
+    </header>
+    <field name="label" hidden/>
+    <field name="order" hidden/>
+    <P>
+      <field name="description" widget="RichText" label=""/>
+    </p>
+  </template>
+  <template id="ERPBlokProjectTaskForm">
+    <div class="columns">
+      <div class="column">
+        <field name="code" widget="BarCode" readonly label=""/>
+      </div>
+      <div class="column">
+        <field name="state" widget="StatusBar" />
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column"><field name="label" /></div>
+      <div class="column"><field name="project" readonly/></div>
+    </div>
+    <field name="description" widget="RichText"/>
+  </template>
+</templates>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+  <record external_id="menu_erpblok_project_root" model="Model.FuretUI.Menu.Root">
+    <field name="order">0</field>
+    <field name="space" external_id="space_project"/>
+    <field name="children">
+      <record external_id="menu_erpblok_project" model="Model.FuretUI.Menu.Resource">
+        <field name="order">10</field>
+        <field name="label">menu.erpblok.project</field>
+        <field 
+            name="resource" 
+            model="Model.FuretUI.Resource.Set" 
+            external_id="resource_project"/>
+        <field name="order_by">code:asc</field>
+      </record>
+    </field>
+  </record>
+</records>

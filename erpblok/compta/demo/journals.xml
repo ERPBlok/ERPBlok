@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+  <record external_id="journal_bank" >
+    <field name="code">BANK</field>
+    <field name="label">Journal de bank</field>
+  </record>
+  <record external_id="journal_cash" >
+    <field name="code">CASH</field>
+    <field name="label">Liquide</field>
+  </record>
+</records>

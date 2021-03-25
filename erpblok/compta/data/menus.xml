@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+  <record external_id="menu_erpblok_account_root" model="Model.FuretUI.Menu.Root">
+    <field name="order">0</field>
+    <field name="space" external_id="space_account"/>
+    <field name="children">
+      <record external_id="menu_erpblok_account" model="Model.FuretUI.Menu.Resource">
+        <field name="order">10</field>
+        <field name="label">menu.erpblok.account</field>
+        <field 
+            name="resource" 
+            model="Model.FuretUI.Resource.Set" 
+            external_id="resource_account"/>
+        <field name="order_by">code:asc</field>
+      </record>
+      <record external_id="menu_erpblok_account_journal" model="Model.FuretUI.Menu.Resource">
+        <field name="order">20</field>
+        <field name="label">menu.erpblok.account.journal</field>
+        <field 
+            name="resource" 
+            model="Model.FuretUI.Resource.Set" 
+            external_id="resource_account_journal"/>
+        <field name="order_by">code:asc</field>
+      </record>
+    </field>
+  </record>
+</records>

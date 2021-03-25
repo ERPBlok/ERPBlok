@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+  <record external_id="space_account">
+    <field name="code">account</field>
+    <field name="order">10</field>
+    <field name="label">space.account.title</field>
+    <field name="description">space.account.description</field>
+  </record>
+</records>

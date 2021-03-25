@@ -1,0 +1,9 @@
+pytest
+pytest-cov
+flake8
+WebTest
+sphinx
+sphinxcontrib-httpdomain
+nodeenv
+requests-mock
+freezegun

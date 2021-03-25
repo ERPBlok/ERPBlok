@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+  <record external_id="resource_account" model="Model.FuretUI.Resource.Set">
+    <field name="list" external_id="resource_erpblok_account_list" model="Model.FuretUI.Resource.List">
+      <field name="model">Model.ERPBlok.Account</field>
+      <field name="title">menu.ERPBlok.account</field>
+      <field name="template">ERPBlokAccountList</field>
+      <field name="filters">
+        <record external_id="resource_filter_erpblok_account_code">
+          <field name="key">code</field>
+          <field name="label">resource.erpblok.account.code</field>
+        </record>
+        <record external_id="resource_filter_erpblok_account_label">
+          <field name="key">label</field>
+          <field name="label">resource.erpblok.account.label</field>
+        </record>
+      </field>
+    </field>
+    <field name="form" external_id="resource_erpblok_account_form" model="Model.FuretUI.Resource.Form">
+      <field name="model">Model.ERPBlok.Account</field>
+      <field name="template">ERPBlokAccountForm</field>
+    </field>
+  </record>
+  <record external_id="resource_account_journal" model="Model.FuretUI.Resource.Set">
+    <field name="list" external_id="resource_erpblok_account_journal_kanban" model="Model.FuretUI.Resource.List">
+      <field name="model">Model.ERPBlok.Account.Journal</field>
+      <field name="title">menu.ERPBlok.account.journal</field>
+      <field name="template">ERPBlokAccountJournalList</field>
+      <field name="filters">
+        <record external_id="resource_filter_erpblok_account_journal_code">
+          <field name="key">code</field>
+          <field name="label">resource.erpblok.account.journal.code</field>
+        </record>
+        <record external_id="resource_filter_erpblok_account_journal_label">
+          <field name="key">label</field>
+          <field name="label">resource.erpblok.account.journal.label</field>
+        </record>
+      </field>
+    </field>
+    <field name="form" external_id="resource_erpblok_account_journal_form" model="Model.FuretUI.Resource.Form">
+      <field name="model">Model.ERPBlok.Account.Journal</field>
+      <field name="template">ERPBlokAccountJournalForm</field>
+    </field>
+  </record>
+</records>
