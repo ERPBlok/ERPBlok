@@ -42,6 +42,7 @@ Setup
      anyblok_interpreter -c app.dev.cfg
 
 Documentations:
+
 * `doc AnyBlok <https://doc.anyblok.org/en/latest/MEMENTO.html>`_
 * `doc SQLAlchemy <https://docs.sqlalchemy.org/en/14/orm/query.html?highlight=query#sqlalchemy.orm.Query>`_
 
