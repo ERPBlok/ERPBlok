@@ -20,7 +20,7 @@ furl
 phonenumbers 
 pycountry
 cryptography
-pygments==2.0.2
+pygments==2.7.4
 
 git+https://github.com/AnyBlok/anyblok_furetui.git#egg=anyblok_furetui
 

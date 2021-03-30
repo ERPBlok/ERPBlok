@@ -21,7 +21,7 @@ phonenumbers
 pycountry
 cryptography
 colorama
-pygments==2.0.2
+pygments==2.7.4
 
 -e git+https://github.com/AnyBlok/anyblok_furetui.git#egg=anyblok_furetui
 
