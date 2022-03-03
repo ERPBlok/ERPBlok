@@ -20,9 +20,18 @@
     </tabs>
   </template>
   <template id="CompanyContactList">
-    <field name="type" sortable/>
-    <field name="value" />
-    <field name="label" />
+    <field name="type" sortable />
+    <field name="value">
+      <slot>
+        <div v-if="['phone', 'mobile', 'fax'].indexOf(data.type) !== -1">{{ data.phone }}</div>
+        <a v-if="['website'].indexOf(data.type) !== -1">{{ data.url }}</a>
+        <div v-if="['email'].indexOf(data.type) !== -1">{{ data.email }}</div>
+      </slot>
+    </field>
+    <field name="label" sortable />
+    <field name="phone" hidden />
+    <field name="url" hidden />
+    <field name="email" hidden />
   </template>
   <template id="CompanyContactForm">
     <header>
@@ -33,7 +42,25 @@
     </div>
     <div class="columns">
       <div class="column"><field name="type"/></div>
-      <div class="column"><field name="value"/></div>
+      <div 
+        class="column"
+      >
+        <field 
+          name="phone"
+          required="['phone', 'mobile', 'fax'].indexOf(fields.type) !== -1"
+          hidden="['phone', 'mobile', 'fax'].indexOf(fields.type) == -1" 
+        />
+        <field 
+          name="url"
+          required="['website'].indexOf(fields.type) !== -1"
+          hidden="['website'].indexOf(fields.type) == -1"
+        />
+        <field 
+          name="email"
+          required="['email'].indexOf(fields.type) !== -1"
+          hidden="['email'].indexOf(fields.type) == -1"
+        />
+      </div>
     </div>
   </template>
   <template id="CompanyAddressList">
