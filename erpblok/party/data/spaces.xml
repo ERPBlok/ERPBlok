@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+  <record external_id="space_party">
+    <field name="code">party</field>
+    <field name="order">10</field>
+    <field name="label">space.party.title</field>
+    <field name="description">space.party.description</field>
+  </record>
+</records>

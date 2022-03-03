@@ -1,0 +1,37 @@
+<templates>
+  <template id="PartyList">
+    <field name="name" />
+  </template>
+  <template id="PartyForm">
+    <div class="columns">
+      <div class="column"><field name="name"/></div>
+    </div>
+    <tabs>
+      <tab label="General">
+        <div class="columns">
+          <div class="column is-4">
+            <field name="contacts" resource-external_id="resource_party_contact"/>
+          </div>
+          <div class="column is-8">
+            <field name="addresses" resource-external_id="resource_party_address"/>
+          </div>
+        </div>
+      </tab>
+      <tab label="Companies" only-for-roles="admin">
+        <field name="companies" widget="Many2ManyTags"/>
+      </tab>
+    </tabs>
+  </template>
+  <template id="PartyContactList">
+    <call template="MixinContactList"/>
+  </template>
+  <template id="PartyContactForm">
+    <call template="MixinContactForm"/>
+  </template>
+  <template id="PartyAddressList">
+    <call template="MixinAddressList"/>
+  </template>
+  <template id="PartyAddressForm">
+    <call template="MixinAddressForm"/>
+  </template>
+</templates>
