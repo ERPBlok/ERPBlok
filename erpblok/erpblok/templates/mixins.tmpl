@@ -1,0 +1,66 @@
+<templates>
+  <template id="MixinContactList">
+    <field name="type" sortable />
+    <field name="value">
+      <slot>
+        <div v-if="['phone', 'mobile', 'fax'].indexOf(data.type) !== -1">{{ data.phone }}</div>
+        <a v-if="['website'].indexOf(data.type) !== -1">{{ data.url }}</a>
+        <div v-if="['email'].indexOf(data.type) !== -1">{{ data.email }}</div>
+      </slot>
+    </field>
+    <field name="label" sortable />
+    <field name="phone" hidden />
+    <field name="url" hidden />
+    <field name="email" hidden />
+  </template>
+  <template id="MixinContactForm">
+    <div class="columns">
+      <div class="column"><field name="label"/></div>
+    </div>
+    <div class="columns">
+      <div class="column"><field name="type"/></div>
+      <div 
+        class="column"
+      >
+        <field 
+          name="phone"
+          required="['phone', 'mobile', 'fax'].indexOf(fields.type) !== -1"
+          hidden="['phone', 'mobile', 'fax'].indexOf(fields.type) == -1" 
+        />
+        <field 
+          name="url"
+          required="['website'].indexOf(fields.type) !== -1"
+          hidden="['website'].indexOf(fields.type) == -1"
+        />
+        <field 
+          name="email"
+          required="['email'].indexOf(fields.type) !== -1"
+          hidden="['email'].indexOf(fields.type) == -1"
+        />
+      </div>
+    </div>
+  </template>
+  <template id="MixinAddressList">
+    <field name="name" sortable/>
+    <field name="street" />
+    <field name="street_2" />
+    <field name="street_3" />
+    <field name="zip_code" />
+    <field name="city" />
+    <field name="country" />
+  </template>
+  <template id="MixinAddressForm">
+    <field name="name" />
+    <field name="street" />
+    <div class="columns">
+      <div class="column"><field name="street_2" /></div>
+      <div class="column"><field name="street_3" /></div>
+    </div>
+    <div class="columns">
+      <div class="column"><field name="zip_code" /></div>
+      <div class="column"><field name="city" /></div>
+      <div class="column"><field name="country" /></div>
+    </div>
+  </template>
+</templates>
+

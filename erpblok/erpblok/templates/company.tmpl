@@ -20,65 +20,15 @@
     </tabs>
   </template>
   <template id="CompanyContactList">
-    <field name="type" sortable />
-    <field name="value">
-      <slot>
-        <div v-if="['phone', 'mobile', 'fax'].indexOf(data.type) !== -1">{{ data.phone }}</div>
-        <a v-if="['website'].indexOf(data.type) !== -1">{{ data.url }}</a>
-        <div v-if="['email'].indexOf(data.type) !== -1">{{ data.email }}</div>
-      </slot>
-    </field>
-    <field name="label" sortable />
-    <field name="phone" hidden />
-    <field name="url" hidden />
-    <field name="email" hidden />
+    <call template="MixinContactList"/>
   </template>
   <template id="CompanyContactForm">
-    <header>
-      <h1><strong>Contact : </strong>{{data.label}}</h1>
-    </header>
-    <div class="columns">
-      <div class="column"><field name="label"/></div>
-    </div>
-    <div class="columns">
-      <div class="column"><field name="type"/></div>
-      <div 
-        class="column"
-      >
-        <field 
-          name="phone"
-          required="['phone', 'mobile', 'fax'].indexOf(fields.type) !== -1"
-          hidden="['phone', 'mobile', 'fax'].indexOf(fields.type) == -1" 
-        />
-        <field 
-          name="url"
-          required="['website'].indexOf(fields.type) !== -1"
-          hidden="['website'].indexOf(fields.type) == -1"
-        />
-        <field 
-          name="email"
-          required="['email'].indexOf(fields.type) !== -1"
-          hidden="['email'].indexOf(fields.type) == -1"
-        />
-      </div>
-    </div>
+    <call template="MixinContactForm"/>
   </template>
   <template id="CompanyAddressList">
-    <field name="name" sortable/>
-    <field name="street" />
-    <field name="street_2" />
-    <field name="street_3" />
-    <field name="zip_code" />
-    <field name="city" />
-    <field name="country" />
+    <call template="MixinAddressList"/>
   </template>
   <template id="CompanyAddressForm">
-    <field name="name" />
-    <field name="street" />
-    <field name="street_2" />
-    <field name="street_3" />
-    <field name="zip_code" />
-    <field name="city" />
-    <field name="country" />
+    <call template="MixinAddressForm"/>
   </template>
 </templates>

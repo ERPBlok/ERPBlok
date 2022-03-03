@@ -26,6 +26,7 @@ class Erpblok(Blok, BlokImporter):
             # 'fr': fr,
         },
         'templates': [
+            'templates/mixins.tmpl',
             'templates/company.tmpl',
             'templates/user.tmpl',
         ],
