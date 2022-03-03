@@ -1,0 +1,66 @@
+from erpblok.blok import Blok
+from anyblok_pyramid import PERM_WRITE
+from anyblok_io.blok import BlokImporter
+
+
+def import_declaration_module(reload=None):
+    from . import models
+    models.import_declaration_module(reload)
+
+
+class Party(Blok, BlokImporter):
+    """Helper to manage all your projects"""
+    version = "0.1.0"
+    author = "Jean-Sébastien Suzanne"
+    category = 'Party'
+    required = [
+        'erpblok',
+    ]
+
+    furetui = {
+        "i18n": {},
+        "templates": [
+            "templates/party.tmpl",
+        ],
+    }
+
+    @classmethod
+    def import_declaration_module(cls):
+        import_declaration_module()
+
+    @classmethod
+    def reload_declaration_module(cls, reload):
+        import_declaration_module(reload=reload)
+
+    def party_user_role_authorizations(self):
+        return [
+            {
+                "code": "role-admin-party",
+                "model": "Model.Party",
+                "perms": PERM_WRITE,
+            },
+            {
+                "code": "role-admin-party-contact",
+                "model": "Model.Party.Contact",
+                "perms": PERM_WRITE,
+            },
+            {
+                "code": "role-admin-party-address",
+                "model": "Model.Party.Address",
+                "perms": PERM_WRITE,
+            },
+        ]
+
+    def update_role(self):
+        party = self.registry.Pyramid.Role.ensure_exists(
+            "party", self.party_user_role_authorizations(), label="Party"
+        )
+        admin = self.registry.Pyramid.Role.ensure_exists("admin", [])
+        if party not in admin.children:
+            admin.children.append(party)
+
+    def update(self, latest):
+        self.import_file_xml("Model.FuretUI.Space", "data", "spaces.xml")
+        self.import_file_xml("Model.FuretUI.Resource", "data", "resources.xml")
+        self.import_file_xml("Model.FuretUI.Menu", "data", "menus.xml")
+        self.update_role()

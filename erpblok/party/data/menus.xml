@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+  <record external_id="menu_erpblok_party" model="Model.FuretUI.Menu.Root">
+    <field name="order">0</field>
+    <field name="space" external_id="space_party"/>
+    <field name="children">
+      <record external_id="menu_erpblok_party_party" model="Model.FuretUI.Menu.Resource">
+        <field name="order">10</field>
+        <field name="label">menu.erpblok.party</field>
+        <field 
+            name="resource" 
+            model="Model.FuretUI.Resource.Set" 
+            external_id="resource_party"/>
+        <field name="order_by">name:asc</field>
+      </record>
+      <record external_id="menu_erpblok_party_address" model="Model.FuretUI.Menu.Resource">
+        <field name="order">20</field>
+        <field name="label">menu.erpblok.party_address</field>
+        <field 
+            name="resource" 
+            model="Model.FuretUI.Resource.Set" 
+            external_id="resource_party_address"/>
+      </record>
+    </field>
+  </record>
+</records>
