@@ -1,0 +1,57 @@
+<templates>
+  <template id="CompanyList">
+    <field name="name" />
+  </template>
+  <template id="CompanyForm">
+    <div class="columns">
+      <div class="column"><field name="name"/></div>
+    </div>
+    <tabs>
+      <tab label="General">
+        <div class="columns">
+          <div class="column is-4">
+            <field name="contacts" resource-external_id="resource_company_contact"/>
+          </div>
+          <div class="column is-8">
+            <field name="addresses" resource-external_id="resource_company_address"/>
+          </div>
+        </div>
+      </tab>
+    </tabs>
+  </template>
+  <template id="CompanyContactList">
+    <field name="type" sortable/>
+    <field name="value" />
+    <field name="label" />
+  </template>
+  <template id="CompanyContactForm">
+    <header>
+      <h1><strong>Contact : </strong>{{data.label}}</h1>
+    </header>
+    <div class="columns">
+      <div class="column"><field name="label"/></div>
+    </div>
+    <div class="columns">
+      <div class="column"><field name="type"/></div>
+      <div class="column"><field name="value"/></div>
+    </div>
+  </template>
+  <template id="CompanyAddressList">
+    <field name="name" sortable/>
+    <field name="street" />
+    <field name="street_2" />
+    <field name="street_3" />
+    <field name="zip_code" />
+    <field name="city" />
+    <field name="country" />
+  </template>
+  <template id="CompanyAddressForm">
+    <field name="name" />
+    <field name="street" />
+    <field name="street_2" />
+    <field name="street_3" />
+    <field name="zip_code" />
+    <field name="city" />
+    <field name="country" />
+  </template>
+</templates>

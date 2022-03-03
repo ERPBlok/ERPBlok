@@ -16,11 +16,12 @@ class ERPBlokAddress:
     street_3 = String()
     zip_code = String(nullable=False)
     city = String(nullable=False)
-    country = Country(nullable=False)
+    country = Country(nullable=False, mode='alpha_3')
 
     @classmethod
     def before_update_orm_event(cls, mapper, connection, target):
-        country_validator_method = f"country_validator_{target.country.alpha2}"
+        country_validator_method = (
+            f"country_validator_{target.country.alpha_3.lower()}")
         if hasattr(target, country_validator_method):
             getattr(target, country_validator_method)()
 
