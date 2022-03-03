@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+  <record external_id="resource_company" model="Model.FuretUI.Resource.Set">
+    <field name="list" external_id="resource_company_list" model="Model.FuretUI.Resource.List">
+      <field name="model">Model.Company</field>
+      <field name="title">Company</field>
+      <field name="template">CompanyList</field>
+      <field name="filters">
+        <record external_id="resource_filter_company_name">
+          <field name="key">name</field>
+          <field name="label">resource.company.name</field>
+        </record>
+      </field>
+    </field>
+    <field name="form" external_id="resource_company_form" model="Model.FuretUI.Resource.Form">
+      <field name="model">Model.Company</field>
+      <field name="template">CompanyForm</field>
+    </field>
+  </record>
+  <record external_id="resource_company_address" model="Model.FuretUI.Resource.Set">
+    <field name="list" external_id="resource_company_address_list" model="Model.FuretUI.Resource.List">
+      <field name="model">Model.Company.Address</field>
+      <field name="title">Addresses</field>
+      <field name="template">CompanyAddressList</field>
+    </field>
+    <field name="form" external_id="resource_company_address_form" model="Model.FuretUI.Resource.Form">
+      <field name="model">Model.Company.Address</field>
+      <field name="template">CompanyAddressForm</field>
+    </field>
+  </record>
+  <record external_id="resource_company_contact" model="Model.FuretUI.Resource.Set">
+    <field name="list" external_id="resource_company_contact_list" model="Model.FuretUI.Resource.List">
+      <field name="model">Model.Company.Contact</field>
+      <field name="title">Contacts</field>
+      <field name="template">CompanyContactList</field>
+      <field name="filters">
+        <record external_id="resource_filter_company_contact_type">
+          <field name="key">type</field>
+          <field name="label">resource.company.contact.type</field>
+        </record>
+        <record external_id="resource_filter_company_contact_label">
+          <field name="key">label</field>
+          <field name="label">resource.company.contact.label</field>
+        </record>
+      </field>
+    </field>
+    <field name="form" external_id="resource_company_contact_form" model="Model.FuretUI.Resource.Form">
+      <field name="model">Model.Company.Contact</field>
+      <field name="template">CompanyContactForm</field>
+    </field>
+  </record>
+  <record external_id="resource_user_access" model="Model.FuretUI.Resource.Set">
+    <field name="list" external_id="resource_user_access_list" model="Model.FuretUI.Resource.List">
+      <field name="model">Model.Company.UserAccess</field>
+      <field name="title">Accesses</field>
+      <field name="template">UserAccessList</field>
+    </field>
+    <field name="form" external_id="resource_user_access_form" model="Model.FuretUI.Resource.Form">
+      <field name="model">Model.Company.UserAccess</field>
+      <field name="template">UserAccessForm</field>
+    </field>
+  </record>
+</records>

@@ -1,0 +1,24 @@
+<templates>
+  <template extend="PyramidUserForm">
+    <xpath expression="./field[@name='roles']" action="replace">
+      <div class="columns">
+        <div class="column"><field name="roles" widget="Many2ManyTags" /></div>
+        <div class="column" ><field name="companies_accesses" resource-external_id="resource_user_access"/></div>
+      </div>
+    </xpath>
+  </template>
+  <template id="UserAccessList">
+    <field name="company" sortable="company.name"/>
+    <field name="can_create" />
+    <field name="can_update" />
+    <field name="can_delete" />
+  </template>
+  <template id="UserAccessForm">
+    <div class="columns">
+      <div class="column"><field name="company"/></div>
+      <div class="column"><field name="can_create"/></div>
+      <div class="column"><field name="can_update"/></div>
+      <div class="column"><field name="can_delete"/></div>
+    </div>
+  </template>
+</templates>

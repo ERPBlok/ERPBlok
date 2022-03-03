@@ -1,0 +1,34 @@
+<templates>
+  <template id="CompanyList">
+    <field name="name" />
+  </template>
+  <template id="CompanyForm">
+    <div class="columns">
+      <div class="column"><field name="name"/></div>
+    </div>
+    <tabs>
+      <tab label="General">
+        <div class="columns">
+          <div class="column is-4">
+            <field name="contacts" resource-external_id="resource_company_contact"/>
+          </div>
+          <div class="column is-8">
+            <field name="addresses" resource-external_id="resource_company_address"/>
+          </div>
+        </div>
+      </tab>
+    </tabs>
+  </template>
+  <template id="CompanyContactList">
+    <call template="MixinContactList"/>
+  </template>
+  <template id="CompanyContactForm">
+    <call template="MixinContactForm"/>
+  </template>
+  <template id="CompanyAddressList">
+    <call template="MixinAddressList"/>
+  </template>
+  <template id="CompanyAddressForm">
+    <call template="MixinAddressForm"/>
+  </template>
+</templates>
