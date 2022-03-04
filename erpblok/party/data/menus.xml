@@ -34,7 +34,7 @@
         <field 
             name="resource" 
             model="Model.FuretUI.Resource.Singleton" 
-            external_id="resource_party_configuration2"/>
+            external_id="resource_party_configuration"/>
       </record>
     </field>
   </record>
