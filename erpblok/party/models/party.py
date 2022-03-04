@@ -2,6 +2,7 @@ from anyblok import Declarations
 from anyblok.column import String, Integer
 from anyblok.relationship import Many2One, Many2Many
 from anyblok_pyramid.bloks.pyramid.restrict import restrict_query_by_user
+from anyblok_furetui.factory import SingletonModelFactory
 
 
 register = Declarations.register
@@ -40,3 +41,9 @@ class Contact(Mixin.ERPBlokContact):
     party = Many2One(
         model=Model.Party, nullable=False, one2many="contacts")
     address = Many2One(model=Model.Party.Address, one2many="contacts")
+
+
+@register(Model.Party, factory=SingletonModelFactory)
+class Configuration:
+
+    plop = String()

@@ -49,4 +49,8 @@
       <field name="template">PartyContactForm</field>
     </field>
   </record>
+  <record external_id="resource_party_configuration2" model="Model.FuretUI.Resource.Singleton">
+    <field name="model">Model.Party.Configuration</field>
+    <field name="template">PartyConfiguration</field>
+  </record>
 </records>

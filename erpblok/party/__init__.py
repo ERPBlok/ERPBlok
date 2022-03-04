@@ -32,30 +32,35 @@ class Party(Blok, BlokImporter):
     def reload_declaration_module(cls, reload):
         import_declaration_module(reload=reload)
 
-    def party_user_role_authorizations(self):
-        return [
-            {
-                "code": "role-admin-party",
-                "model": "Model.Party",
-                "perms": PERM_WRITE,
-            },
-            {
-                "code": "role-admin-party-contact",
-                "model": "Model.Party.Contact",
-                "perms": PERM_WRITE,
-            },
-            {
-                "code": "role-admin-party-address",
-                "model": "Model.Party.Address",
-                "perms": PERM_WRITE,
-            },
-        ]
-
     def update_role(self):
         party = self.registry.Pyramid.Role.ensure_exists(
-            "party", self.party_user_role_authorizations(), label="Party"
+            "party",
+            [
+                {
+                    "code": "role-admin-party",
+                    "model": "Model.Party",
+                    "perms": PERM_WRITE,
+                },
+                {
+                    "code": "role-admin-party-contact",
+                    "model": "Model.Party.Contact",
+                    "perms": PERM_WRITE,
+                },
+                {
+                    "code": "role-admin-party-address",
+                    "model": "Model.Party.Address",
+                    "perms": PERM_WRITE,
+                },
+            ],
+            label="Party"
         )
-        admin = self.registry.Pyramid.Role.ensure_exists("admin", [])
+        admin = self.registry.Pyramid.Role.ensure_exists("admin", [
+            {
+                "code": "role-admin-party-configuration",
+                "model": "Model.Party.Configuration",
+                "perms": PERM_WRITE,
+            },
+        ])
         if party not in admin.children:
             admin.children.append(party)
 
