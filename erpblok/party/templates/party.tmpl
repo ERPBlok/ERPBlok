@@ -8,6 +8,7 @@
       <div class="column"><field name="name"/></div>
       <div class="column"><field name="code" readonly/></div>
     </div>
+    <field name="categs" widget="Many2ManyTags"/>
     <tabs>
       <tab label="General">
         <div class="columns">
@@ -23,6 +24,12 @@
         <field name="companies" widget="Many2ManyTags"/>
       </tab>
     </tabs>
+  </template>
+  <template id="PartyCategoryList">
+    <field name="label" />
+  </template>
+  <template id="PartyCategoryForm">
+    <field name="label" />
   </template>
   <template id="PartyContactList">
     <call template="MixinContactList"/>

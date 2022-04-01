@@ -44,6 +44,14 @@
             model="Model.FuretUI.Resource.Set" 
             external_id="resource_party_sequence"/>
       </record>
+      <record external_id="menu_erpblok_party_configuration_category" model="Model.FuretUI.Menu.Resource">
+        <field name="order">20</field>
+        <field name="label">menu.erpblok.party.category</field>
+        <field 
+            name="resource" 
+            model="Model.FuretUI.Resource.Set" 
+            external_id="resource_party_category"/>
+      </record>
     </field>
   </record>
 </records>

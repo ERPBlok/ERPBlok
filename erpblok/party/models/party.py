@@ -19,6 +19,7 @@ class Party:
     name = String(nullable=False)
     companies = Many2Many(model='Model.Company')
     code = Contextual(String(nullable=False), identity='company')
+    categs = Many2Many(model="Model.Party.Category")
 
     @restrict_query_by_user()
     def restrict_by_companies(cls, query, user):
@@ -70,6 +71,13 @@ class Contact(Mixin.ERPBlokContact):
     party = Many2One(
         model=Model.Party, nullable=False, one2many="contacts")
     address = Many2One(model=Model.Party.Address, one2many="contacts")
+
+
+@register(Model.Party)
+class Category:
+
+    id = Integer(primary_key=True)
+    label = String(nullable=False)
 
 
 @register(Model.System)

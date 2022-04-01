@@ -51,6 +51,11 @@ class Party(Blok, BlokImporter):
                     "model": "Model.Party.Address",
                     "perms": PERM_WRITE,
                 },
+                {
+                    "code": "role-admin-party-category",
+                    "model": "Model.Party.Category",
+                    "perms": PERM_WRITE,
+                },
             ],
             label="Party"
         )
