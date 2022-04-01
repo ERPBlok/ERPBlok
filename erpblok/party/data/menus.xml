@@ -36,6 +36,14 @@
             model="Model.FuretUI.Resource.Singleton" 
             external_id="resource_party_configuration"/>
       </record>
+      <record external_id="menu_erpblok_party_configuration_sequence" model="Model.FuretUI.Menu.Resource">
+        <field name="order">20</field>
+        <field name="label">menu.erpblok.party.sequence</field>
+        <field 
+            name="resource" 
+            model="Model.FuretUI.Resource.Set" 
+            external_id="resource_party_sequence"/>
+      </record>
     </field>
   </record>
 </records>

@@ -1,10 +1,12 @@
 <templates>
   <template id="PartyList">
     <field name="name" />
+    <field name="code" />
   </template>
   <template id="PartyForm">
     <div class="columns">
       <div class="column"><field name="name"/></div>
+      <div class="column"><field name="code" readonly/></div>
     </div>
     <tabs>
       <tab label="General">
@@ -36,7 +38,7 @@
   </template>
   <template id="PartyConfiguration">
     <div class="columns">
-      <div class="column"><field name="plop" /></div>
+      <div class="column"><field name="sequence" /></div>
     </div>
   </template>
 </templates>

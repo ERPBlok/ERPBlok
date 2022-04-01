@@ -60,6 +60,16 @@ class Party(Blok, BlokImporter):
                 "model": "Model.Party.Configuration",
                 "perms": PERM_WRITE,
             },
+            {
+                "code": "role-admin-party-configuration-company",
+                "model": "Model.Party.Configuration.Company",
+                "perms": PERM_WRITE,
+            },
+            {
+                "code": "role-admin-party-sequence",
+                "model": "Model.Party.Sequence",
+                "perms": PERM_WRITE,
+            },
         ])
         if party not in admin.children:
             admin.children.append(party)

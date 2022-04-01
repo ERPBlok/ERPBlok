@@ -3,7 +3,10 @@
     <xpath expression="./field[@name='roles']" action="replace">
       <div class="columns">
         <div class="column"><field name="roles" widget="Many2ManyTags" /></div>
-        <div class="column" ><field name="companies_accesses" resource-external_id="resource_user_access"/></div>
+        <div class="column">
+            <field name="companies_accesses" resource-external_id="resource_user_access"/>
+            <field name="current_company" tags="user-access"/>
+        </div>
       </div>
     </xpath>
   </template>

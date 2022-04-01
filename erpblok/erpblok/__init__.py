@@ -29,6 +29,7 @@ class Erpblok(Blok, BlokImporter):
             'templates/mixins.tmpl',
             'templates/company.tmpl',
             'templates/user.tmpl',
+            'templates/system.tmpl',
         ],
     }
 
@@ -67,6 +68,11 @@ class Erpblok(Blok, BlokImporter):
                 {
                     "code": "role-admin-company-useraccess",
                     "model": "Model.Company.UserAccess",
+                    "perms": PERM_WRITE,
+                },
+                {
+                    "code": "role-admin-system-sequence",
+                    "model": "Model.System.Sequence",
                     "perms": PERM_WRITE,
                 },
             ],
