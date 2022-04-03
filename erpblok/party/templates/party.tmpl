@@ -1,11 +1,14 @@
 <templates>
   <template id="PartyList">
     <field name="name" />
+    <field name="code" />
   </template>
   <template id="PartyForm">
     <div class="columns">
       <div class="column"><field name="name"/></div>
+      <div class="column"><field name="code" readonly/></div>
     </div>
+    <field name="categs" widget="Many2ManyTags"/>
     <tabs>
       <tab label="General">
         <div class="columns">
@@ -22,6 +25,12 @@
       </tab>
     </tabs>
   </template>
+  <template id="PartyCategoryList">
+    <field name="label" />
+  </template>
+  <template id="PartyCategoryForm">
+    <field name="label" />
+  </template>
   <template id="PartyContactList">
     <call template="MixinContactList"/>
   </template>
@@ -36,7 +45,7 @@
   </template>
   <template id="PartyConfiguration">
     <div class="columns">
-      <div class="column"><field name="plop" /></div>
+      <div class="column"><field name="sequence" /></div>
     </div>
   </template>
 </templates>

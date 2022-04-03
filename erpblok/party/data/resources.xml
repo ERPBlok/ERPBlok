@@ -49,8 +49,30 @@
       <field name="template">PartyContactForm</field>
     </field>
   </record>
+  <record external_id="resource_party_category" model="Model.FuretUI.Resource.Set">
+    <field name="list" external_id="resource_party_category_list" model="Model.FuretUI.Resource.List">
+      <field name="model">Model.Party.Category</field>
+      <field name="title">Category</field>
+      <field name="template">PartyCategoryList</field>
+    </field>
+    <field name="form" external_id="resource_party_categoy_form" model="Model.FuretUI.Resource.Form">
+      <field name="model">Model.Party.Category</field>
+      <field name="template">PartyCategoryForm</field>
+    </field>
+  </record>
   <record external_id="resource_party_configuration" model="Model.FuretUI.Resource.Singleton">
     <field name="model">Model.Party.Configuration</field>
     <field name="template">PartyConfiguration</field>
+  </record>
+  <record external_id="resource_party_sequence" model="Model.FuretUI.Resource.Set">
+    <field name="list" external_id="resource_party_sequence_list" model="Model.FuretUI.Resource.List">
+      <field name="model">Model.Party.Sequence</field>
+      <field name="title">Sequences</field>
+      <field name="template">SystemSequenceList</field>
+    </field>
+    <field name="form" external_id="resource_party_sequence_form" model="Model.FuretUI.Resource.Form">
+      <field name="model">Model.Party.Sequence</field>
+      <field name="template">SystemSequenceForm</field>
+    </field>
   </record>
 </records>

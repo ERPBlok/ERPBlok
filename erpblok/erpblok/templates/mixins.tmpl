@@ -2,13 +2,13 @@
   <template id="MixinContactList">
     <field name="type" sortable />
     <field name="value">
-      <slot>
-        <div v-if="['phone', 'mobile', 'fax'].indexOf(data.type) !== -1">{{ data.phone }}</div>
-        <a v-if="['website'].indexOf(data.type) !== -1">{{ data.url }}</a>
-        <div v-if="['email'].indexOf(data.type) !== -1">{{ data.email }}</div>
-      </slot>
+      {{ fields.label }}
+      <p>
+        <div hidden="Not(In(fields.type, ['phone', 'mobile', 'fax']))">{{ fields.phone }}</div>
+        <div hidden="Not(Equal(fields.type, 'website'))"><a>{{ fields.url }}</a></div>
+        <div hidden="Not(Equal(fields.type, 'email'))">{{ fields.email }}</div>
     </field>
-    <field name="label" sortable />
+    <field name="label" hidden />
     <field name="phone" hidden />
     <field name="url" hidden />
     <field name="email" hidden />
@@ -24,18 +24,18 @@
       >
         <field 
           name="phone"
-          required="['phone', 'mobile', 'fax'].indexOf(fields.type) !== -1"
-          hidden="['phone', 'mobile', 'fax'].indexOf(fields.type) == -1" 
+          required="In(fields.type, ['phone', 'mobile', 'fax'])"
+          hidden="Not(In(fields.type, ['phone', 'mobile', 'fax']))" 
         />
         <field 
           name="url"
-          required="['website'].indexOf(fields.type) !== -1"
-          hidden="['website'].indexOf(fields.type) == -1"
+          required="Equal(fields.type, 'website')"
+          hidden="Not(Equal(fields.type, 'website'))"
         />
         <field 
           name="email"
-          required="['email'].indexOf(fields.type) !== -1"
-          hidden="['email'].indexOf(fields.type) == -1"
+          required="Equal(fields.type, 'email')"
+          hidden="Not(Equal(fields.type, 'email'))"
         />
       </div>
     </div>

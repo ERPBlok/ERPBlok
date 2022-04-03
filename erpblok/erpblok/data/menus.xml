@@ -6,13 +6,20 @@
     <field name="children">
       <record external_id="menu_setting_company_company" model="Model.FuretUI.Menu.Resource">
         <field name="order">10</field>
-        <field name="icon_code">user</field>
-        <field name="icon_type">fa</field>
         <field name="label">menu.settings.company</field>
         <field 
             name="resource" 
             model="Model.FuretUI.Resource.Set" 
             external_id="resource_company"/>
+        <field name="order_by">name,asc</field>
+      </record>
+      <record external_id="menu_setting_system_sequence" model="Model.FuretUI.Menu.Resource">
+        <field name="order">20</field>
+        <field name="label">menu.settings.system.sequence</field>
+        <field 
+            name="resource" 
+            model="Model.FuretUI.Resource.Set" 
+            external_id="resource_system_sequence"/>
         <field name="order_by">name,asc</field>
       </record>
     </field>

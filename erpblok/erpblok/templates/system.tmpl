@@ -1,0 +1,28 @@
+<templates>
+  <template id="SystemSequenceList">
+    <field name="code"/>
+    <field name="start"/>
+    <field name="current"/>
+    <field name="seq_name"/>
+    <field name="formater"/>
+    <field name="no_gap"/>
+    <field name="company"/>
+    <field name="type"/>
+  </template>
+  <template id="SystemSequenceForm">
+    <div class="columns">
+      <div class="column"><field name="seq_name" readonly="fields.id > 0"/></div>
+      <div class="column"><field name="code"/></div>
+      <div class="column"><field name="formater"/></div>
+    </div>
+    <div class="columns">
+      <div class="column"><field name="company" readonly/></div>
+      <div class="column"><field name="type" /></div>
+    </div>
+    <div class="columns">
+      <div class="column"><field name="start" readonly="Equal(fields.id, null)"/></div>
+      <div class="column"><field name="current" readonly/></div>
+      <div class="column"><field name="no_gap"/></div>
+    </div>
+  </template>
+</templates>

@@ -51,6 +51,11 @@ class Party(Blok, BlokImporter):
                     "model": "Model.Party.Address",
                     "perms": PERM_WRITE,
                 },
+                {
+                    "code": "role-admin-party-category",
+                    "model": "Model.Party.Category",
+                    "perms": PERM_WRITE,
+                },
             ],
             label="Party"
         )
@@ -58,6 +63,16 @@ class Party(Blok, BlokImporter):
             {
                 "code": "role-admin-party-configuration",
                 "model": "Model.Party.Configuration",
+                "perms": PERM_WRITE,
+            },
+            {
+                "code": "role-admin-party-configuration-company",
+                "model": "Model.Party.Configuration.Company",
+                "perms": PERM_WRITE,
+            },
+            {
+                "code": "role-admin-party-sequence",
+                "model": "Model.Party.Sequence",
                 "perms": PERM_WRITE,
             },
         ])
