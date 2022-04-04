@@ -1,8 +1,0 @@
-en = {
-    'space': {
-    },
-    'menu': {
-    },
-    'resource': {
-    },
-}

@@ -5,20 +5,20 @@
     <field name="multi_type">thumbnail</field>
     <field name="thumbnail" external_id="resource_blok_thumbnail" model="Model.FuretUI.Resource.Thumbnail">
       <field name="model">Model.System.Blok</field>
-      <field name="title">menu.system.blok</field>
+      <field name="title">Bloks manager</field>
       <field name="template">BlokThumbnail</field>
       <field name="filters">
         <record external_id="resource_filter_blok_thumbnail_name">
           <field name="key">name</field>
-          <field name="label">resource.system.blok.name</field>
+          <field name="label">Name</field>
         </record>
         <record external_id="resource_filter_blok_thumbnail_state">
           <field name="key">state</field>
-          <field name="label">resource.system.blok.state</field>
+          <field name="label">State</field>
         </record>
         <record external_id="resource_filter_blok_thumbnail_category">
           <field name="key">state</field>
-          <field name="label">resource.system.blok.category</field>
+          <field name="label">Category</field>
         </record>
       </field>
     </field>

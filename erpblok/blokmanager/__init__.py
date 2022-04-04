@@ -1,6 +1,5 @@
 from anyblok.blok import Blok
 from anyblok_io.blok import BlokImporter
-from .i18n import i18n
 
 
 def import_declaration_module(reload=None):
@@ -18,7 +17,6 @@ class BlokManager(Blok, BlokImporter):
     ]
 
     furetui = {
-        "i18n": i18n,
         "templates": [
             "templates/blok.tmpl",
         ],
