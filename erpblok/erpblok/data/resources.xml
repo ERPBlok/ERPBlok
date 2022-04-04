@@ -8,7 +8,7 @@
       <field name="filters">
         <record external_id="resource_filter_company_name">
           <field name="key">name</field>
-          <field name="label">resource.company.name</field>
+          <field name="label">Name</field>
         </record>
       </field>
     </field>
@@ -36,11 +36,11 @@
       <field name="filters">
         <record external_id="resource_filter_company_contact_type">
           <field name="key">type</field>
-          <field name="label">resource.company.contact.type</field>
+          <field name="label">Type</field>
         </record>
         <record external_id="resource_filter_company_contact_label">
           <field name="key">label</field>
-          <field name="label">resource.company.contact.label</field>
+          <field name="label">Label</field>
         </record>
       </field>
     </field>
