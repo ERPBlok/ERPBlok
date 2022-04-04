@@ -61,14 +61,6 @@ msgctxt "resource:filter:resource_filter_party_contact_label"
 msgid "Label"
 msgstr "Libellé"
 
-msgctxt "menu:menu_erpblok_party"
-msgid "menu.erpblok.party_configuration"
-msgstr ""
-
-msgctxt "menu:menu_erpblok_party_configuration"
-msgid "menu.erpblok.party_configuration"
-msgstr ""
-
 msgctxt "menu:menu_erpblok_party_party"
 msgid "Parties"
 msgstr "Tiers"
@@ -88,10 +80,6 @@ msgstr "Séquence"
 msgctxt "menu:menu_erpblok_party_configuration_category"
 msgid "Category"
 msgstr "Catégorie"
-
-msgctxt "menu:menu_erpblok_party_configuration"
-msgid "menu.erpblok.party"
-msgstr ""
 
 msgctxt "field:Model.Party:id"
 msgid "Id"

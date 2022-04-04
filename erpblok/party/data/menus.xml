@@ -26,7 +26,7 @@
   <record external_id="menu_erpblok_party_configuration" model="Model.FuretUI.Menu.Root">
     <field name="order">999</field>
     <field name="space" external_id="space_party"/>
-    <field name="label">menu.erpblok.party_configuration</field>
+    <field name="label">Settings</field>
     <field name="children">
       <record external_id="menu_erpblok_party_configuration_party" model="Model.FuretUI.Menu.Resource">
         <field name="order">10</field>
