@@ -1,0 +1,106 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1.0\n"
+"POT-Creation-Date: 2022-04-04T17:07:45.709025\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.2\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr\n"
+
+msgctxt "resource:thumbnail:resource_blok_thumbnail"
+msgid "Bloks manager"
+msgstr "Interface des applications"
+
+msgctxt "resource:filter:resource_filter_blok_thumbnail_name"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "resource:filter:resource_filter_blok_thumbnail_state"
+msgid "State"
+msgstr "État"
+
+msgctxt "resource:filter:resource_filter_blok_thumbnail_category"
+msgid "Category"
+msgstr "Catégorie"
+
+msgctxt "menu:menu_system_blok"
+msgid "Bloks manager"
+msgstr "Interface des applications"
+
+msgctxt "field:Model.System.Blok:come_from_erpblok"
+msgid "Come from erpblok"
+msgstr "Venant d'ERPBlok"
+
+msgctxt "field:Model.System.Blok:category"
+msgid "Category"
+msgstr "Catégorie"
+
+msgctxt "field:Model.System.Blok:color"
+msgid "Color"
+msgstr "Couleur"
+
+msgctxt "field:Model.System.Blok:name"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "field:Model.System.Blok:state"
+msgid "State"
+msgstr "État"
+
+msgctxt "field:selection:Model.System.Blok:state"
+msgid "Uninstalled"
+msgstr "Non installé"
+
+msgctxt "field:selection:Model.System.Blok:state"
+msgid "Installed"
+msgstr "Installé"
+
+msgctxt "field:selection:Model.System.Blok:state"
+msgid "To install"
+msgstr "À installer"
+
+msgctxt "field:selection:Model.System.Blok:state"
+msgid "To update"
+msgstr "À mettre à jours"
+
+msgctxt "field:selection:Model.System.Blok:state"
+msgid "To uninstall"
+msgstr "À installer"
+
+msgctxt "field:selection:Model.System.Blok:state"
+msgid "Undefined"
+msgstr "Non définit"
+
+msgctxt "field:Model.System.Blok:author"
+msgid "Author"
+msgstr "Auteur"
+
+msgctxt "field:Model.System.Blok:order"
+msgid "Order"
+msgstr "Ordre"
+
+msgctxt "field:Model.System.Blok:short_description"
+msgid "Short description"
+msgstr "Résumé"
+
+msgctxt "field:Model.System.Blok:long_description"
+msgid "Long description"
+msgstr "Description"
+
+msgctxt "field:Model.System.Blok:logo"
+msgid "Logo"
+msgstr "Logo"
+
+msgctxt "field:Model.System.Blok:version"
+msgid "Version"
+msgstr "Version"
+
+msgctxt "field:Model.System.Blok:installed_version"
+msgid "Installed version"
+msgstr "Version installée"

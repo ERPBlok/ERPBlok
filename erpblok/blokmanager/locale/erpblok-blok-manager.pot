@@ -1,0 +1,100 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1.0\n"
+"POT-Creation-Date: 2022-04-04T17:07:45.709025\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgctxt "resource:thumbnail:resource_blok_thumbnail"
+msgid "Bloks manager"
+msgstr ""
+
+msgctxt "resource:filter:resource_filter_blok_thumbnail_name"
+msgid "Name"
+msgstr ""
+
+msgctxt "resource:filter:resource_filter_blok_thumbnail_state"
+msgid "State"
+msgstr ""
+
+msgctxt "resource:filter:resource_filter_blok_thumbnail_category"
+msgid "Category"
+msgstr ""
+
+msgctxt "menu:menu_system_blok"
+msgid "Bloks manager"
+msgstr ""
+
+msgctxt "field:Model.System.Blok:come_from_erpblok"
+msgid "Come from erpblok"
+msgstr ""
+
+msgctxt "field:Model.System.Blok:category"
+msgid "Category"
+msgstr ""
+
+msgctxt "field:Model.System.Blok:color"
+msgid "Color"
+msgstr ""
+
+msgctxt "field:Model.System.Blok:name"
+msgid "Name"
+msgstr ""
+
+msgctxt "field:Model.System.Blok:state"
+msgid "State"
+msgstr ""
+
+msgctxt "field:selection:Model.System.Blok:state"
+msgid "Uninstalled"
+msgstr ""
+
+msgctxt "field:selection:Model.System.Blok:state"
+msgid "Installed"
+msgstr ""
+
+msgctxt "field:selection:Model.System.Blok:state"
+msgid "To install"
+msgstr ""
+
+msgctxt "field:selection:Model.System.Blok:state"
+msgid "To update"
+msgstr ""
+
+msgctxt "field:selection:Model.System.Blok:state"
+msgid "To uninstall"
+msgstr ""
+
+msgctxt "field:selection:Model.System.Blok:state"
+msgid "Undefined"
+msgstr ""
+
+msgctxt "field:Model.System.Blok:author"
+msgid "Author"
+msgstr ""
+
+msgctxt "field:Model.System.Blok:order"
+msgid "Order"
+msgstr ""
+
+msgctxt "field:Model.System.Blok:short_description"
+msgid "Short description"
+msgstr ""
+
+msgctxt "field:Model.System.Blok:long_description"
+msgid "Long description"
+msgstr ""
+
+msgctxt "field:Model.System.Blok:logo"
+msgid "Logo"
+msgstr ""
+
+msgctxt "field:Model.System.Blok:version"
+msgid "Version"
+msgstr ""
+
+msgctxt "field:Model.System.Blok:installed_version"
+msgid "Installed version"
+msgstr ""
