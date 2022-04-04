@@ -1,0 +1,172 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1.0\n"
+"POT-Creation-Date: 2022-04-04T17:37:43.537658\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgctxt "template:PartyForm:tab"
+msgid "General"
+msgstr ""
+
+msgctxt "template:PartyForm:tab"
+msgid "Companies"
+msgstr ""
+
+msgctxt "space:space_party:label"
+msgid "Party"
+msgstr ""
+
+msgctxt "space:space_party:description"
+msgid "Manage the parties"
+msgstr ""
+
+msgctxt "resource:list:resource_party_list"
+msgid "Party"
+msgstr ""
+
+msgctxt "resource:list:resource_party_address_list"
+msgid "Addresses"
+msgstr ""
+
+msgctxt "resource:list:resource_party_contact_list"
+msgid "Contacts"
+msgstr ""
+
+msgctxt "resource:list:resource_party_category_list"
+msgid "Categories"
+msgstr ""
+
+msgctxt "resource:list:resource_party_sequence_list"
+msgid "Sequences"
+msgstr ""
+
+msgctxt "resource:filter:resource_filter_party_name"
+msgid "Name"
+msgstr ""
+
+msgctxt "resource:filter:resource_filter_party_contact_type"
+msgid "Type"
+msgstr ""
+
+msgctxt "resource:filter:resource_filter_party_contact_label"
+msgid "Label"
+msgstr ""
+
+msgctxt "menu:menu_erpblok_party"
+msgid "menu.erpblok.party_configuration"
+msgstr ""
+
+msgctxt "menu:menu_erpblok_party_configuration"
+msgid "menu.erpblok.party_configuration"
+msgstr ""
+
+msgctxt "menu:menu_erpblok_party_party"
+msgid "Parties"
+msgstr ""
+
+msgctxt "menu:menu_erpblok_party_address"
+msgid "Addresses"
+msgstr ""
+
+msgctxt "menu:menu_erpblok_party_configuration_party"
+msgid "Settings"
+msgstr ""
+
+msgctxt "menu:menu_erpblok_party_configuration_sequence"
+msgid "Sequence"
+msgstr ""
+
+msgctxt "menu:menu_erpblok_party_configuration_category"
+msgid "Category"
+msgstr ""
+
+msgctxt "menu:menu_erpblok_party_configuration"
+msgid "menu.erpblok.party"
+msgstr ""
+
+msgctxt "field:Model.Party:id"
+msgid "Id"
+msgstr ""
+
+msgctxt "field:Model.Party:name"
+msgid "Name"
+msgstr ""
+
+msgctxt "field:Model.Party:companies"
+msgid "Companies"
+msgstr ""
+
+msgctxt "field:Model.Party:code"
+msgid "Code"
+msgstr ""
+
+msgctxt "field:Model.Party:categs"
+msgid "Categs"
+msgstr ""
+
+msgctxt "field:Model.Party.Address:party"
+msgid "Party"
+msgstr ""
+
+msgctxt "field:Model.Party.Contact:party"
+msgid "Party"
+msgstr ""
+
+msgctxt "field:Model.Party.Contact:address"
+msgid "Address"
+msgstr ""
+
+msgctxt "field:Model.Party.Category:id"
+msgid "Id"
+msgstr ""
+
+msgctxt "field:Model.Party.Category:label"
+msgid "Label"
+msgstr ""
+
+msgctxt "field:Model.System.Sequence:company"
+msgid "Company"
+msgstr ""
+
+msgctxt "field:Model.System.Sequence:type"
+msgid "Type"
+msgstr ""
+
+msgctxt "field:selection:Model.System.Sequence:type"
+msgid "Party"
+msgstr ""
+
+msgctxt "field:Model.System.Sequence:id"
+msgid "Id"
+msgstr ""
+
+msgctxt "field:Model.System.Sequence:code"
+msgid "Code"
+msgstr ""
+
+msgctxt "field:Model.System.Sequence:start"
+msgid "Start"
+msgstr ""
+
+msgctxt "field:Model.System.Sequence:current"
+msgid "Current"
+msgstr ""
+
+msgctxt "field:Model.System.Sequence:seq_name"
+msgid "Seq name"
+msgstr ""
+
+msgctxt "field:Model.System.Sequence:formater"
+msgid "Formater"
+msgstr ""
+
+msgctxt "field:Model.System.Sequence:no_gap"
+msgid "No gap"
+msgstr ""
+
+msgctxt "field:Model.Party.Configuration:sequence"
+msgid "Sequence"
+msgstr ""

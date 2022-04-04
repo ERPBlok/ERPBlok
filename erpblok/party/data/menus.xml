@@ -6,7 +6,7 @@
     <field name="children">
       <record external_id="menu_erpblok_party_party" model="Model.FuretUI.Menu.Resource">
         <field name="order">10</field>
-        <field name="label">menu.erpblok.party</field>
+        <field name="label">Parties</field>
         <field 
             name="resource" 
             model="Model.FuretUI.Resource.Set" 
@@ -15,7 +15,7 @@
       </record>
       <record external_id="menu_erpblok_party_address" model="Model.FuretUI.Menu.Resource">
         <field name="order">20</field>
-        <field name="label">menu.erpblok.party_address</field>
+        <field name="label">Addresses</field>
         <field 
             name="resource" 
             model="Model.FuretUI.Resource.Set" 
@@ -30,7 +30,7 @@
     <field name="children">
       <record external_id="menu_erpblok_party_configuration_party" model="Model.FuretUI.Menu.Resource">
         <field name="order">10</field>
-        <field name="label">menu.erpblok.party</field>
+        <field name="label">Settings</field>
         <field 
             name="resource" 
             model="Model.FuretUI.Resource.Singleton" 
@@ -38,7 +38,7 @@
       </record>
       <record external_id="menu_erpblok_party_configuration_sequence" model="Model.FuretUI.Menu.Resource">
         <field name="order">20</field>
-        <field name="label">menu.erpblok.party.sequence</field>
+        <field name="label">Sequence</field>
         <field 
             name="resource" 
             model="Model.FuretUI.Resource.Set" 
@@ -46,7 +46,7 @@
       </record>
       <record external_id="menu_erpblok_party_configuration_category" model="Model.FuretUI.Menu.Resource">
         <field name="order">20</field>
-        <field name="label">menu.erpblok.party.category</field>
+        <field name="label">Category</field>
         <field 
             name="resource" 
             model="Model.FuretUI.Resource.Set" 
