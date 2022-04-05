@@ -92,7 +92,6 @@ class Sequence:
 
 @register(Model.Party, tablename=Model.System.Sequence)
 class Sequence(Model.System.Sequence):  # noqa
-    pass
 
     @restrict_query_by_user()
     def restrict_by_company(cls, query, user):
