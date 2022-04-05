@@ -27,7 +27,7 @@ msgstr ""
 
 msgctxt "space:space_party:label"
 msgid "Party"
-msgstr "Tier"
+msgstr "Tiers"
 
 msgctxt "space:space_party:description"
 msgid "Manage the parties"
@@ -35,7 +35,7 @@ msgstr "Gestion des tiers"
 
 msgctxt "resource:list:resource_party_list"
 msgid "Party"
-msgstr "Tier"
+msgstr "Tiers"
 
 msgctxt "resource:list:resource_party_address_list"
 msgid "Addresses"
@@ -115,7 +115,7 @@ msgstr "Tiers"
 
 msgctxt "field:Model.Party.Contact:party"
 msgid "Party"
-msgstr "Tier"
+msgstr "Tiers"
 
 msgctxt "field:Model.Party.Contact:address"
 msgid "Address"
@@ -139,7 +139,7 @@ msgstr "Type"
 
 msgctxt "field:selection:Model.System.Sequence:type"
 msgid "Party"
-msgstr "Tier"
+msgstr "Tiers"
 
 msgctxt "field:Model.System.Sequence:id"
 msgid "Id"
@@ -167,7 +167,7 @@ msgstr "Définition du format"
 
 msgctxt "field:Model.System.Sequence:no_gap"
 msgid "No gap"
-msgstr ""
+msgstr "Sans trou"
 
 msgctxt "field:Model.Party.Configuration:sequence"
 msgid "Sequence"
