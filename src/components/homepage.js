@@ -10,3 +10,13 @@ defineComponent('homepage', {
     </div>
   `,
 });
+defineComponent('furet-ui-appbar-body', {
+  template: `
+    <div />
+  `,
+});
+defineComponent('furet-ui-appbar-footer', {
+  template: `
+    <div />
+  `,
+});

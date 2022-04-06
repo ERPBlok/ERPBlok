@@ -7,6 +7,8 @@
       <record external_id="menu_erpblok_party_party" model="Model.FuretUI.Menu.Resource">
         <field name="order">10</field>
         <field name="label">Parties</field>
+        <field name="icon_code">handshake</field>
+        <field name="icon_type">fa</field>
         <field 
             name="resource" 
             model="Model.FuretUI.Resource.Set" 
@@ -16,6 +18,8 @@
       <record external_id="menu_erpblok_party_address" model="Model.FuretUI.Menu.Resource">
         <field name="order">20</field>
         <field name="label">Addresses</field>
+        <field name="icon_code">address-book</field>
+        <field name="icon_type">fa</field>
         <field 
             name="resource" 
             model="Model.FuretUI.Resource.Set" 
@@ -27,10 +31,14 @@
     <field name="order">999</field>
     <field name="space" external_id="space_party"/>
     <field name="label">Settings</field>
+    <field name="icon_code">wrench</field>
+    <field name="icon_type">fa</field>
     <field name="children">
       <record external_id="menu_erpblok_party_configuration_party" model="Model.FuretUI.Menu.Resource">
         <field name="order">10</field>
         <field name="label">Settings</field>
+        <field name="icon_code">wrench</field>
+        <field name="icon_type">fa</field>
         <field 
             name="resource" 
             model="Model.FuretUI.Resource.Singleton" 
@@ -39,6 +47,8 @@
       <record external_id="menu_erpblok_party_configuration_sequence" model="Model.FuretUI.Menu.Resource">
         <field name="order">20</field>
         <field name="label">Sequence</field>
+        <field name="icon_code">code</field>
+        <field name="icon_type">fa</field>
         <field 
             name="resource" 
             model="Model.FuretUI.Resource.Set" 
@@ -47,6 +57,8 @@
       <record external_id="menu_erpblok_party_configuration_category" model="Model.FuretUI.Menu.Resource">
         <field name="order">20</field>
         <field name="label">Category</field>
+        <field name="icon_code">user-tag</field>
+        <field name="icon_type">fa</field>
         <field 
             name="resource" 
             model="Model.FuretUI.Resource.Set" 

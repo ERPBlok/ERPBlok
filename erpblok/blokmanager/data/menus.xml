@@ -7,6 +7,8 @@
       <record external_id="menu_system_blok" model="Model.FuretUI.Menu.Resource">
         <field name="order">10</field>
         <field name="label">Bloks manager</field>
+        <field name="icon_code">cubes</field>
+        <field name="icon_type">fa</field>
         <field 
             name="resource" 
             model="Model.FuretUI.Resource.Set" 

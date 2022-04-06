@@ -7,6 +7,8 @@
       <record external_id="menu_setting_company_company" model="Model.FuretUI.Menu.Resource">
         <field name="order">10</field>
         <field name="label">Company</field>
+        <field name="icon_code">building</field>
+        <field name="icon_type">fa</field>
         <field 
             name="resource" 
             model="Model.FuretUI.Resource.Set" 
@@ -16,6 +18,8 @@
       <record external_id="menu_setting_system_sequence" model="Model.FuretUI.Menu.Resource">
         <field name="order">20</field>
         <field name="label">Sequence</field>
+        <field name="icon_code">code</field>
+        <field name="icon_type">fa</field>
         <field 
             name="resource" 
             model="Model.FuretUI.Resource.Set" 

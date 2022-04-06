@@ -5,5 +5,7 @@
     <field name="order">10</field>
     <field name="label">Party</field>
     <field name="description">Manage the parties</field>
+    <field name="icon_code">handshake</field>
+    <field name="icon_type">fa</field>
   </record>
 </records>
