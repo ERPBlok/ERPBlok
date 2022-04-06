@@ -50,6 +50,11 @@ class Hr(Blok, BlokImporter):
                     "model": "Model.Company.Employee.Tag",
                     "perms": PERM_WRITE,
                 },
+                {
+                    "code": "role-rh-employee-contract",
+                    "model": "Model.Company.Employee.Contact",
+                    "perms": PERM_WRITE,
+                },
             ],
             label="HR"
         )

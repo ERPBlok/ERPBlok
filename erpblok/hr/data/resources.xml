@@ -49,4 +49,15 @@
       <field name="template">CompanyEmployeeTagForm</field>
     </field>
   </record>
+  <record external_id="resource_company_employee_contract" model="Model.FuretUI.Resource.Set">
+    <field name="list" external_id="resource_company_employee_contract_list" model="Model.FuretUI.Resource.List">
+      <field name="model">Model.Company.Employee.Contract</field>
+      <field name="title">Contracts</field>
+      <field name="template">CompanyEmployeeContractList</field>
+    </field>
+    <field name="form" external_id="resource_company_employee_contract_form" model="Model.FuretUI.Resource.Form">
+      <field name="model">Model.Company.Employee.Contract</field>
+      <field name="template">CompanyEmployeeContractForm</field>
+    </field>
+  </record>
 </records>

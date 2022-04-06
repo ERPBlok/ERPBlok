@@ -1,5 +1,6 @@
+from datetime import date
 from anyblok import Declarations
-from anyblok.column import String, Integer
+from anyblok.column import String, Integer, Date
 from anyblok.relationship import Many2One, Many2Many
 
 
@@ -27,3 +28,14 @@ class Tag(Mixin.ERPBlokCompany):
 
     id = Integer(primary_key=True)
     label = String(nullable=False)
+
+
+@register(Model.Company.Employee)
+class Contract:
+
+    id = Integer(primary_key=True)
+    employee = Many2One(
+        model=Model.Company.Employee, nullable=False, one2many="contracts")
+    start_date = Date(nullable=False, default=date.today)
+    end_date = Date()
+    function = String(nullable=False)

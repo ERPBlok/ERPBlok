@@ -19,6 +19,9 @@
         </div>
         <field name="tags" widget="Many2ManyTags"/>
       </tab>
+      <tab label="Contracts">
+        <field name="contracts" resource-external_id="resource_company_employee_contract"/>
+      </tab>
     </tabs>
   </template>
   <template id="CompanyEmployeeTagList">
@@ -33,5 +36,15 @@
   </template>
   <template id="CompanyEmployeeContactForm">
     <call template="MixinContactForm"/>
+  </template>
+  <template id="CompanyEmployeeContractList">
+    <field name="start_date" />
+    <field name="end_date" />
+    <field name="function" />
+  </template>
+  <template id="CompanyEmployeeContractForm">
+    <field name="start_date" />
+    <field name="end_date" />
+    <field name="function" />
   </template>
 </templates>
