@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+  <record external_id="resource_company_employee" model="Model.FuretUI.Resource.Set">
+    <field name="list" external_id="resource_company_employee_list" model="Model.FuretUI.Resource.List">
+      <field name="model">Model.Company.Employee</field>
+      <field name="title">Employees</field>
+      <field name="template">CompanyEmployeeList</field>
+      <field name="filters">
+        <record external_id="resource_filter_company_employee_name">
+          <field name="key">name</field>
+          <field name="label">Name</field>
+        </record>
+      </field>
+    </field>
+    <field name="form" external_id="resource_company_employee_form" model="Model.FuretUI.Resource.Form">
+      <field name="model">Model.Company.Employee</field>
+      <field name="template">CompanyEmployeeForm</field>
+    </field>
+  </record>
+  <record external_id="resource_company_employee_contact" model="Model.FuretUI.Resource.Set">
+    <field name="list" external_id="resource_company_employee_contact_list" model="Model.FuretUI.Resource.List">
+      <field name="model">Model.Company.Employee.Contact</field>
+      <field name="title">Contacts</field>
+      <field name="template">CompanyEmployeeContactList</field>
+      <field name="filters">
+        <record external_id="resource_filter_company_employee_contact_type">
+          <field name="key">type</field>
+          <field name="label">Type</field>
+        </record>
+        <record external_id="resource_filter_company_employee_contact_label">
+          <field name="key">label</field>
+          <field name="label">Label</field>
+        </record>
+      </field>
+    </field>
+    <field name="form" external_id="resource_company_employee_contact_form" model="Model.FuretUI.Resource.Form">
+      <field name="model">Model.Company.Employee.Contact</field>
+      <field name="template">CompanyEmployeeContactForm</field>
+    </field>
+  </record>
+  <record external_id="resource_company_employee_tag" model="Model.FuretUI.Resource.Set">
+    <field name="list" external_id="resource_company_employee_tag_list" model="Model.FuretUI.Resource.List">
+      <field name="model">Model.Company.Employee.Tag</field>
+      <field name="title">Categories</field>
+      <field name="template">CompanyEmployeeTagList</field>
+    </field>
+    <field name="form" external_id="resource_company_employee_categoy_form" model="Model.FuretUI.Resource.Form">
+      <field name="model">Model.Company.Employee.Tag</field>
+      <field name="template">CompanyEmployeeTagForm</field>
+    </field>
+  </record>
+</records>

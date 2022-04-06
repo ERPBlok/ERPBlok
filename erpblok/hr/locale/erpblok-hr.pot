@@ -1,0 +1,32 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1.0\n"
+"POT-Creation-Date: 2022-04-06T14:05:23.206724\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgctxt "field:Model.Company.Employee:name"
+msgid "Name"
+msgstr ""
+
+msgctxt "field:Model.Company.Employee:company"
+msgid "Company"
+msgstr ""
+
+msgctxt "field:Model.Company.Employee:tags"
+msgid "Tags"
+msgstr ""
+
+msgctxt "field:Model.Company.Employee.Contact:employee"
+msgid "Employee"
+msgstr ""
+
+msgctxt "field:Model.Company.Employee.Tag:id"
+msgid "Id"
+msgstr ""
+
+msgctxt "field:Model.Company.Employee.Tag:label"
+msgid "Label"
+msgstr ""

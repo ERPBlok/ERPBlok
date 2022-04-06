@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+  <record external_id="space_company_employee">
+    <field name="code">hr</field>
+    <field name="order">11</field>
+    <field name="label">HR</field>
+    <field name="description">Manage the human resource</field>
+    <field name="icon_code">users</field>
+    <field name="icon_type">fa</field>
+  </record>
+</records>

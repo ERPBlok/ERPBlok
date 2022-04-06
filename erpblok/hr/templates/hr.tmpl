@@ -1,0 +1,37 @@
+<templates>
+  <template id="CompanyEmployeeList">
+    <call template="MixinAddressList"/>
+  </template>
+  <template id="CompanyEmployeeForm">
+    <header>
+      <h1><strong>Employee : </strong>{{ fields.name }}</h1>
+    </header>
+    <field name="company" hidden/>
+    <tabs>
+      <tab label="General">
+        <div class="columns">
+          <div class="column is-4">
+            <field name="contacts" resource-external_id="resource_company_employee_contact"/>
+          </div>
+          <div class="column is-8">
+            <call template="MixinAddressForm"/>
+          </div>
+        </div>
+        <field name="tags" widget="Many2ManyTags"/>
+      </tab>
+    </tabs>
+  </template>
+  <template id="CompanyEmployeeTagList">
+    <field name="label" />
+  </template>
+  <template id="CompanyEmployeeTagForm">
+    <field name="label" />
+    <field name="company" hidden/>
+  </template>
+  <template id="CompanyEmployeeContactList">
+    <call template="MixinContactList"/>
+  </template>
+  <template id="CompanyEmployeeContactForm">
+    <call template="MixinContactForm"/>
+  </template>
+</templates>

@@ -45,6 +45,7 @@ setup(
             'erpblok=erpblok.erpblok:Erpblok',
             'erpblok-blok-manager=erpblok.blokmanager:BlokManager',
             'erpblok-party=erpblok.party:Party',
+            'erpblok-hr=erpblok.hr:Hr',
             'erpblok-project=erpblok.project:Project',
             'erpblok-compta=erpblok.compta:Compta',
          ]
