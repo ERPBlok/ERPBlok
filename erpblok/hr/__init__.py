@@ -52,7 +52,7 @@ class Hr(Blok, BlokImporter):
                 },
                 {
                     "code": "role-rh-employee-contract",
-                    "model": "Model.Company.Employee.Contact",
+                    "model": "Model.Company.Employee.Contract",
                     "perms": PERM_WRITE,
                 },
             ],
