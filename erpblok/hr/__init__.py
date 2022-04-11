@@ -20,6 +20,7 @@ class Hr(Blok, BlokImporter):
     furetui = {
         "templates": [
             "templates/hr.tmpl",
+            "templates/user.tmpl",
         ],
     }
 

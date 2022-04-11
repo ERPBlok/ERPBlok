@@ -1,0 +1,7 @@
+<templates>
+  <template extend="PyramidUserForm">
+    <xpath expression=".//field[@name='roles']" action="insertAfter">
+      <field name="employee" readonly/>
+    </xpath>
+  </template>
+</templates>

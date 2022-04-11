@@ -1,7 +1,7 @@
 from datetime import date
 from anyblok import Declarations
 from anyblok.column import String, Integer, Date
-from anyblok.relationship import Many2One, Many2Many
+from anyblok.relationship import Many2One, Many2Many, One2One
 
 
 register = Declarations.register
@@ -14,6 +14,7 @@ class Employee(Mixin.ERPBlokAddress, Mixin.ERPBlokCompany):
 
     name = String(nullable=False)
     tags = Many2Many(model="Model.Company.Employee.Tag")
+    user = One2One(model=Model.Pyramid.User, backref="employee")
 
 
 @register(Model.Company.Employee)
