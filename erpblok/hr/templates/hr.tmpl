@@ -10,7 +10,7 @@
     <tabs>
       <tab label="General">
         <div class="columns">
-          <div class="column is-6"><field name="user" display="fields.login"/></div>
+          <div class="column is-6"><field name="user" display="fields.login" required="fields.user_is_required"/></div>
         </div>
         <div class="columns">
           <div class="column is-4">
@@ -49,5 +49,16 @@
     <field name="start_date" />
     <field name="end_date" />
     <field name="function" />
+  </template>
+  <template id="CompanyEmployeeConfiguration">
+    <div class="columns">
+      <div class="column">
+        <field 
+          name="must_be_link_with_a_user" 
+          tooltip="If checked the field user must be filled on the Employee"
+        />
+      </div>
+      <div class="column" />
+    </div>
   </template>
 </templates>

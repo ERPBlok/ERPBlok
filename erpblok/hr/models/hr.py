@@ -1,6 +1,7 @@
 from datetime import date
 from anyblok import Declarations
 from anyblok.column import String, Integer, Date
+from anyblok.field import Function
 from anyblok.relationship import Many2One, Many2Many, One2One
 
 
@@ -15,6 +16,10 @@ class Employee(Mixin.ERPBlokAddress, Mixin.ERPBlokCompany):
     name = String(nullable=False)
     tags = Many2Many(model="Model.Company.Employee.Tag")
     user = One2One(model=Model.Pyramid.User, backref="employee")
+    user_is_required = Function(fget="get_user_is_required")
+
+    def get_user_is_required(self):
+        return self.Configuration.get().must_be_link_with_a_user
 
 
 @register(Model.Company.Employee)

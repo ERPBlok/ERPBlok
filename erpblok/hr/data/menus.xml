@@ -4,7 +4,7 @@
     <field name="order">0</field>
     <field name="space" external_id="space_company_employee"/>
     <field name="children">
-      <record external_id="menu_erpblok_company_employee_party" model="Model.FuretUI.Menu.Resource">
+      <record external_id="menu_erpblok_company_employee_company_employee" model="Model.FuretUI.Menu.Resource">
         <field name="order">10</field>
         <field name="label">Employee</field>
         <field name="icon_code">users</field>
@@ -14,6 +14,25 @@
             model="Model.FuretUI.Resource.Set" 
             external_id="resource_company_employee"/>
         <field name="order_by">name:asc</field>
+      </record>
+    </field>
+  </record>
+  <record external_id="menu_erpblok_company_employee_configuration" model="Model.FuretUI.Menu.Root">
+    <field name="order">999</field>
+    <field name="space" external_id="space_company_employee"/>
+    <field name="label">Settings</field>
+    <field name="icon_code">wrench</field>
+    <field name="icon_type">fa</field>
+    <field name="children">
+      <record external_id="menu_erpblok_company_employee_configuration_company_employee" model="Model.FuretUI.Menu.Resource">
+        <field name="order">10</field>
+        <field name="label">Settings</field>
+        <field name="icon_code">wrench</field>
+        <field name="icon_type">fa</field>
+        <field 
+            name="resource" 
+            model="Model.FuretUI.Resource.Singleton" 
+            external_id="resource_company_employee_configuration"/>
       </record>
       <record external_id="menu_erpblok_company_employee_tag" model="Model.FuretUI.Menu.Resource">
         <field name="order">20</field>

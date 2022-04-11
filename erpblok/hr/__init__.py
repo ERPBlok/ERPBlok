@@ -59,7 +59,13 @@ class Hr(Blok, BlokImporter):
             ],
             label="HR"
         )
-        admin = self.registry.Pyramid.Role.ensure_exists("admin", [])
+        admin = self.registry.Pyramid.Role.ensure_exists("admin", [
+            {
+                "code": "role-rh-employee-configuration",
+                "model": "Model.Company.Employee.Configuration",
+                "perms": PERM_WRITE,
+            },
+        ])
         if hr not in admin.children:
             admin.children.append(hr)
 

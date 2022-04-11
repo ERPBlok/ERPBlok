@@ -55,7 +55,7 @@
             external_id="resource_party_sequence"/>
       </record>
       <record external_id="menu_erpblok_party_configuration_category" model="Model.FuretUI.Menu.Resource">
-        <field name="order">20</field>
+        <field name="order">30</field>
         <field name="label">Category</field>
         <field name="icon_code">user-tag</field>
         <field name="icon_type">fa</field>

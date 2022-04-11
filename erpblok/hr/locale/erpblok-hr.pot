@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1.0\n"
-"POT-Creation-Date: 2022-04-06T14:57:35.971471\n"
+"POT-Creation-Date: 2022-04-11T14:55:31.707355\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -17,6 +17,10 @@ msgstr ""
 
 msgctxt "template:CompanyEmployeeForm:tab:label"
 msgid "Contracts"
+msgstr ""
+
+msgctxt "template:CompanyEmployeeConfiguration:field:tooltip"
+msgid "If checked the field user must be filled on the Employee"
 msgstr ""
 
 msgctxt "space:space_company_employee:label"
@@ -55,8 +59,16 @@ msgctxt "resource:filter:resource_filter_company_employee_contact_label"
 msgid "Label"
 msgstr ""
 
-msgctxt "menu:menu_erpblok_company_employee_party"
+msgctxt "menu:menu_erpblok_company_employee_configuration"
+msgid "Settings"
+msgstr ""
+
+msgctxt "menu:menu_erpblok_company_employee_company_employee"
 msgid "Employee"
+msgstr ""
+
+msgctxt "menu:menu_erpblok_company_employee_configuration_company_employee"
+msgid "Settings"
 msgstr ""
 
 msgctxt "menu:menu_erpblok_company_employee_tag"
@@ -69,6 +81,14 @@ msgstr ""
 
 msgctxt "field:Model.Company.Employee:tags"
 msgid "Tags"
+msgstr ""
+
+msgctxt "field:Model.Company.Employee:user"
+msgid "User"
+msgstr ""
+
+msgctxt "field:Model.Company.Employee:user_is_required"
+msgid "User is required"
 msgstr ""
 
 msgctxt "field:Model.Company.Employee.Contact:employee"
@@ -101,4 +121,8 @@ msgstr ""
 
 msgctxt "field:Model.Company.Employee.Contract:function"
 msgid "Function"
+msgstr ""
+
+msgctxt "field:Model.Company.Employee.Configuration:must_be_link_with_a_user"
+msgid "Must be link with a user"
 msgstr ""
