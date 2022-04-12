@@ -1,0 +1,68 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1.0\n"
+"POT-Creation-Date: 2022-04-12T11:44:23.422152\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgctxt "template:CompanyEmployeeForm:tab:label"
+msgid "Teams"
+msgstr ""
+
+msgctxt "template:CompanyEmployeeTeamForm:tab:label"
+msgid "Description"
+msgstr ""
+
+msgctxt "template:CompanyEmployeeTeamForm:tab:label"
+msgid "Employees"
+msgstr ""
+
+msgctxt "resource:list:resource_company_employee_team_list"
+msgid "Teams"
+msgstr ""
+
+msgctxt "menu:menu_erpblok_company_employee_configuration"
+msgid "Settings"
+msgstr ""
+
+msgctxt "menu:menu_erpblok_company_employee_tag"
+msgid "Teams"
+msgstr ""
+
+msgctxt "field:Model.Company.Employee:supervisor"
+msgid "Supervisor"
+msgstr ""
+
+msgctxt "field:Model.Company.Employee:team"
+msgid "Team"
+msgstr ""
+
+msgctxt "field:Model.Company.Employee:name"
+msgid "Name"
+msgstr ""
+
+msgctxt "field:Model.Company.Employee:tags"
+msgid "Tags"
+msgstr ""
+
+msgctxt "field:Model.Company.Employee:user"
+msgid "User"
+msgstr ""
+
+msgctxt "field:Model.Company.Employee:user_is_required"
+msgid "User is required"
+msgstr ""
+
+msgctxt "field:Model.Company.Employee.Team:id"
+msgid "Id"
+msgstr ""
+
+msgctxt "field:Model.Company.Employee.Team:label"
+msgid "Label"
+msgstr ""
+
+msgctxt "field:Model.Company.Employee.Team:description"
+msgid "Description"
+msgstr ""

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+  <record external_id="menu_erpblok_company_employee_configuration" model="Model.FuretUI.Menu.Root">
+    <field name="children">
+      <record external_id="menu_erpblok_company_employee_tag" model="Model.FuretUI.Menu.Resource">
+        <field name="order">30</field>
+        <field name="label">Teams</field>
+        <field name="icon_code">users</field>
+        <field name="icon_type">fa</field>
+        <field 
+            name="resource" 
+            model="Model.FuretUI.Resource.Set" 
+            external_id="resource_company_employee_team"/>
+      </record>
+    </field>
+  </record>
+</records>

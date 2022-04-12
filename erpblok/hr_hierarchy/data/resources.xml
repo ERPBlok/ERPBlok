@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+  <record external_id="resource_company_employee_team" model="Model.FuretUI.Resource.Set">
+    <field name="list" external_id="resource_company_employee_team_list" model="Model.FuretUI.Resource.List">
+      <field name="model">Model.Company.Employee.Team</field>
+      <field name="title">Teams</field>
+      <field name="template">CompanyEmployeeTeamList</field>
+    </field>
+    <field name="form" external_id="resource_company_employee_team_form" model="Model.FuretUI.Resource.Form">
+      <field name="model">Model.Company.Employee.Team</field>
+      <field name="template">CompanyEmployeeTeamForm</field>
+    </field>
+  </record>
+</records>

@@ -1,0 +1,38 @@
+<templates>
+  <template extend="CompanyEmployeeForm">
+    <xpath expression="./tabs" action="insert">
+      <tab label="Teams">
+        <div class="columns">
+          <div class="column">
+            <field name="team" />
+          </div>
+          <div class="column">
+            <field name="supervisor" />
+          </div>
+        </div>
+        <field name="subordinates" resource-external_id="resource_company_employee"/>
+      </tab>
+    </xpath>
+  </template>
+  <template id="CompanyEmployeeTeamList">
+    <field name="label" />
+  </template>
+  <template id="CompanyEmployeeTeamForm">
+    <div class="columns">
+      <div class="column">
+        <field name="label" />
+      </div>
+      <div class="column">
+        <field name="company" hidden/>
+      </div>
+    </div>
+    <tabs>
+      <tab label="Description">
+        <field name="description" widget="RichText"/>
+      </tab>
+      <tab label="Employees">
+        <field name="employees" resource-external_id="resource_company_employee"/>
+      </tab>
+    </tabs>
+  </template>
+</templates>
