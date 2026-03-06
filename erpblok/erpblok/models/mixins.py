@@ -1,7 +1,6 @@
 from anyblok import Declarations
 from anyblok.field import Function
 from anyblok.relationship import Many2One
-from anyblok_pyramid.bloks.pyramid.restrict import restrict_query_by_user
 from anyblok.column import (
     Integer, String, Country, Selection, PhoneNumber, URL, Email)
 
@@ -14,10 +13,6 @@ Mixin = Declarations.Mixin
 class ERPBlokCompany:
 
     company = Many2One(model='Model.Company', nullable=False)
-
-    @restrict_query_by_user()
-    def restrict_by_company(cls, query, user):
-        return user.restrict_by_company(query, cls.company)
 
     @classmethod
     def get_default_values(cls, **kw):

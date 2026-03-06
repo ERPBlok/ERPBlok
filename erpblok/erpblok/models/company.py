@@ -1,7 +1,6 @@
 from anyblok import Declarations
 from anyblok.column import String, Integer
 from anyblok.relationship import Many2One
-from anyblok_pyramid_rest_api.adapter import Adapter
 
 
 register = Declarations.register
@@ -14,18 +13,6 @@ class Company:
 
     id = Integer(primary_key=True)
     name = String(nullable=False)
-
-    class FuretUIAdapter(Adapter):
-
-        @Adapter.tag('user-access')
-        def tag_is_an_alley(self, querystring, query):
-            Company = self.registry.Company
-            user = Company.context['user']
-            query = query.filter(
-                Company.name.in_([
-                    useraccess.company.name
-                    for useraccess in user.companies_accesses]))
-            return query
 
 
 @register(Model.Company)

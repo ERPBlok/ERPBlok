@@ -1,7 +1,6 @@
 from anyblok import Declarations
 from anyblok.column import Selection
 from anyblok.relationship import Many2One
-from anyblok_pyramid.bloks.pyramid.restrict import restrict_query_by_user
 
 
 register = Declarations.register
@@ -37,7 +36,3 @@ class Sequence:
             mapper_args.update({'polymorphic_identity': cls.__registry_name__})
 
         return mapper_args
-
-    @restrict_query_by_user()
-    def restrict_by_company(cls, query, user):
-        return user.restrict_by_company(query, cls.company)
