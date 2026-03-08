@@ -1,6 +1,6 @@
 anyblok
-anyblok_attachment==2.1.1
-anyblok_attachment_jinja==1.0.0
+anyblok_attachment
+anyblok_attachment_jinja
 
 colour 
 jinja2
@@ -9,6 +9,5 @@ furl
 phonenumbers 
 pycountry
 cryptography
-pygments==2.0.2
 
 -e .

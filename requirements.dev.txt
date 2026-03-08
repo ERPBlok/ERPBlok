@@ -8,12 +8,10 @@ phonenumbers
 pycountry
 cryptography
 colorama
-pygments==2.0.2
 
 ipdb
 ipdbplugin
 ipython
-nodeenv
 
 -r requirements.test.txt
 

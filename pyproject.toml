@@ -1,0 +1,133 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "erpblok"
+version = "0.1.0"
+description = "A short description of the Anyblok based project"
+authors = [
+    { name = "Jean-Sébastien Suzanne", email = "js.suzanne@gmail.com" },
+]
+readme = "README.rst"
+requires-python = ">=3.6"
+keywords = ["erpblok"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+dependencies = [
+    "anyblok",
+    "psycopg",
+]
+
+[project.urls]
+Homepage = "https://github.com/Your github username/erpblok"
+
+[project.entry-points.bloks]
+partner = "erpblok.partner:Partner"
+product = "erpblok.product:Product"
+stock = "erpblok.stock:Stock"
+sale = "erpblok.sale:Sale"
+sale_pos = "erpblok.sale_pos:SalePos"
+sale_ecommerce = "erpblok.sale_ecommerce:SaleEcommerce"
+account = "erpblok.account:Account"
+invoice = "erpblok.invoice:Invoice"
+invoice_account = "erpblok.invoice_account:InvoiceAccount"
+sale_stock = "erpblok.sale_stock:SaleStock"
+sale_invoice = "erpblok.sale_invoice:SaleInvoice"
+hr = "erpblok.hr:Hr"
+project = "erpblok.project:Project"
+hr_timesheet = "erpblok.hr_timesheet:HrTimesheet"
+purchase = "erpblok.purchase:Purchase"
+purchase_stock = "erpblok.purchase_stock:PurchaseStock"
+audit = "erpblok.audit:Audit"
+report_base = "erpblok.report_base:ReportBase"
+crm = "erpblok.crm:Crm"
+document = "erpblok.document:Document"
+tax = "erpblok.tax:Tax"
+mrp = "erpblok.mrp:Mrp"
+mail = "erpblok.mail:Mail"
+quality = "erpblok.quality:Quality"
+account_asset = "erpblok.account_asset:AccountAsset"
+maintenance = "erpblok.maintenance:Maintenance"
+stock_barcode = "erpblok.stock_barcode:StockBarcode"
+fleet = "erpblok.fleet:Fleet"
+account_budget = "erpblok.account_budget:AccountBudget"
+auth = "erpblok.auth:Auth"
+security = "erpblok.security:Security"
+
+[tool.setuptools]
+packages = [
+    "erpblok",
+    "erpblok.partner",
+    "erpblok.partner.models",
+    "erpblok.product",
+    "erpblok.product.models",
+    "erpblok.stock",
+    "erpblok.stock.models",
+    "erpblok.sale",
+    "erpblok.sale.models",
+    "erpblok.sale_pos",
+    "erpblok.sale_pos.models",
+    "erpblok.sale_ecommerce",
+    "erpblok.sale_ecommerce.models",
+    "erpblok.account",
+    "erpblok.account.models",
+    "erpblok.invoice",
+    "erpblok.invoice.models",
+    "erpblok.invoice_account",
+    "erpblok.invoice_account.models",
+    "erpblok.sale_stock",
+    "erpblok.sale_stock.models",
+    "erpblok.sale_invoice",
+    "erpblok.sale_invoice.models",
+    "erpblok.hr",
+    "erpblok.hr.models",
+    "erpblok.project",
+    "erpblok.project.models",
+    "erpblok.hr_timesheet",
+    "erpblok.hr_timesheet.models",
+    "erpblok.purchase",
+    "erpblok.purchase.models",
+    "erpblok.purchase_stock",
+    "erpblok.purchase_stock.models",
+    "erpblok.audit",
+    "erpblok.audit.models",
+    "erpblok.report_base",
+    "erpblok.report_base.models",
+    "erpblok.crm",
+    "erpblok.crm.models",
+    "erpblok.document",
+    "erpblok.document.models",
+    "erpblok.tax",
+    "erpblok.tax.models",
+    "erpblok.mrp",
+    "erpblok.mrp.models",
+    "erpblok.mail",
+    "erpblok.mail.models",
+    "erpblok.quality",
+    "erpblok.quality.models",
+    "erpblok.account_asset",
+    "erpblok.account_asset.models",
+    "erpblok.maintenance",
+    "erpblok.maintenance.models",
+    "erpblok.stock_barcode",
+    "erpblok.stock_barcode.models",
+    "erpblok.fleet",
+    "erpblok.fleet.models",
+    "erpblok.account_budget",
+    "erpblok.account_budget.models",
+    "erpblok.auth",
+    "erpblok.auth.models",
+    "erpblok.security",
+    "erpblok.security.models",
+]
+include-package-data = true
+zip-safe = false
