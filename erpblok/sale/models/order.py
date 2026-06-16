@@ -42,14 +42,13 @@ class Order(Mixin.AuditMixin, Mixin.DocumentMixin):
     @classmethod
     def define_mapper_args(cls):
         mapper_args = super(Order, cls).define_mapper_args()
-        if cls.__registry_name__ == 'Model.Order':
+        if cls.__registry_name__ == 'Model.Sale.Order':
             mapper_args.update({
                 'polymorphic_on': cls.type,
-                'polymorphic_identity': 'sale',
             })
-        else:
-            mapper_args.update({
-                'polymorphic_identity': cls.__registry_name__.lower().split('.')[-1],
-            })
+
+        mapper_args.update({
+            'polymorphic_identity': cls.__registry_name__,
+        })
 
         return mapper_args

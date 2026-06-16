@@ -31,11 +31,9 @@ class Product(Mixin.AuditMixin):
         if cls.__registry_name__ == 'Model.Product':
             mapper_args.update({
                 'polymorphic_on': cls.product_type,
-                'polymorphic_identity': 'product',
             })
-        else:
-            mapper_args.update({
-                'polymorphic_identity': cls.__registry_name__.lower().split('.')[-1],
-            })
+        mapper_args.update({
+            'polymorphic_identity': cls.__registry_name__,
+        })
 
         return mapper_args

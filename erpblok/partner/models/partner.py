@@ -27,11 +27,9 @@ class Partner(Mixin.AuditMixin):
         if cls.__registry_name__ == 'Model.Partner':
             mapper_args.update({
                 'polymorphic_on': cls.type,
-                'polymorphic_identity': 'partner',
             })
-        else:
-            mapper_args.update({
-                'polymorphic_identity': cls.__registry_name__.lower().split('.')[-1],
-            })
+        mapper_args.update({
+            'polymorphic_identity': cls.__registry_name__,
+        })
 
         return mapper_args
